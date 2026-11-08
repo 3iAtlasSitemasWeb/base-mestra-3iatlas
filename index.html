@@ -26,6 +26,9 @@
   <meta name="twitter:description" content="Aplicativos e sistemas web sob medida para transformar desafios reais em possibilidades de crescimento.">
   <meta name="twitter:image" content="https://3iatlasia.com.br/assets/og-image.jpg">
 
+  <!-- Supabase JS v2 CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
   <!-- JSON-LD Structured Data (SEO Schema.org) -->
   <script type="application/ld+json">
   {
@@ -88,7 +91,7 @@
     .desktop-nav a:hover,.desktop-nav a.is-active{color:var(--white)}
     .desktop-nav a.is-active:after{position:absolute;bottom:4px;left:50%;width:4px;height:4px;border-radius:50%;background:var(--cyan);content:""}
     .header-actions-group{display:flex;align-items:center;gap:12px}
-    .header-cta{display:inline-flex;align-items:center;gap:10px;padding:11px 15px;border:1px solid #0284c743;border-radius:6px;color:#0284c7;font-size:11px;font-weight:700}
+    .header-cta{display:inline-flex;align-items:center;gap:10px;padding:11px 15px;border:1px solid #0284c743;border-radius:6px;color:#0284c7;font-size:11px;font-weight:700;background:transparent;cursor:pointer}
     .header-cta:hover{background:#0284c710}
     
     /* Seletor de Idiomas Inspirado no Print */
@@ -310,6 +313,13 @@
     .welcome-btn-primary:hover{background:#059669}
     .welcome-btn-secondary{background:transparent;border:0;color:var(--quiet);font-size:11px;font-weight:600;padding:6px}
     .welcome-btn-secondary:hover{color:var(--cyan)}
+
+    /* Estilos da Janela de Autenticação Supabase */
+    .auth-tabs{display:flex;gap:8px;margin:18px 0;border-bottom:1px solid var(--line);padding-bottom:8px}
+    .auth-tab-btn{flex:1;padding:10px;border:1px solid var(--line);border-radius:6px;background:#f8fafc;color:var(--muted);font-weight:700;font-size:11px;cursor:pointer;transition:.2s}
+    .auth-tab-btn.is-active{background:var(--cyan);color:#ffffff;border-color:var(--cyan)}
+    .auth-form{display:grid;gap:12px;margin-top:10px}
+    .auth-message{min-height:22px;text-align:center;margin-top:12px;font-size:11px;font-weight:600}
 
     /* LGPD e Google Compliant Cookie Banner Styles */
     .cookie-banner{position:fixed;bottom:0;left:0;right:0;z-index:90;background:#ffffff;border-top:1px solid var(--line);box-shadow:0 -10px 25px rgba(0,0,0,0.08);padding:16px 0;transition:transform .3s ease}
@@ -566,6 +576,12 @@
       </nav>
 
       <div class="header-actions-group">
+        <!-- Botão de Autenticação Supabase (Header) -->
+        <button class="header-cta" type="button" id="auth-trigger-btn" aria-label="Abrir área de autenticação">
+          <svg width="15" height="15" aria-hidden="true"><use href="#i-fingerprint"/></svg>
+          <span id="auth-btn-text">Entrar / Cadastrar</span>
+        </button>
+
         <!-- Seletor de Idiomas Inspirado no Print -->
         <div class="lang-selector-wrap">
           <button class="lang-btn" type="button" aria-expanded="false" aria-label="Selecionar idioma"><svg width="15" height="15" aria-hidden="true"><use href="#i-globe"/></svg><span>Português</span><svg width="12" height="12" aria-hidden="true"><use href="#i-chevron"/></svg></button>
@@ -590,6 +606,7 @@
       <a href="#sobre">Sobre nós <svg width="17" height="17" aria-hidden="true"><use href="#i-arrow-up"/></svg></a>
       <a href="#diferenciais">Diferenciais <svg width="17" height="17" aria-hidden="true"><use href="#i-arrow-up"/></svg></a>
       <a href="#contato">Contato <svg width="17" height="17" aria-hidden="true"><use href="#i-arrow-up"/></svg></a>
+      <a href="#auth" id="mobile-auth-link">Entrar / Cadastrar <svg width="17" height="17" aria-hidden="true"><use href="#i-fingerprint"/></svg></a>
       <a href="mailto:sac3iatlassistemasweb@yahoo.com?subject=Vamos%20conversar%20sobre%20meu%20projeto%20%7C%203iATLASIA">Fale com a 3iATLASIA <svg width="17" height="17" aria-hidden="true"><use href="#i-arrow-up"/></svg></a>
     </nav>
   </header>
@@ -943,6 +960,55 @@
         <button class="welcome-btn-secondary" type="button" id="welcome-close-btn">Continuar lendo</button>
       </div>
     </div>
+  </dialog>
+
+  <!-- Janela Modal de Autenticação Supabase (Login / Cadastro) -->
+  <dialog id="auth-dialog" aria-labelledby="auth-dialog-title" aria-modal="true">
+    <button class="dialog-close" type="button" aria-label="Fechar janela de autenticação"><svg width="20" height="20" aria-hidden="true"><use href="#i-close"/></svg></button>
+    <svg class="dialog-icon" width="30" height="30" aria-hidden="true"><use href="#i-fingerprint"/></svg>
+    <h2 class="dialog-title" id="auth-dialog-title">Área do Cliente 3iATLASIA</h2>
+    <p class="dialog-subtitle">Entre na sua conta ou crie um cadastro para acessar recursos e gerenciar suas soluções.</p>
+    
+    <div class="auth-tabs" role="tablist" aria-label="Opções de acesso">
+      <button class="auth-tab-btn is-active" type="button" role="tab" id="tab-login-btn" aria-selected="true" aria-controls="panel-login">Entrar</button>
+      <button class="auth-tab-btn" type="button" role="tab" id="tab-signup-btn" aria-selected="false" aria-controls="panel-signup">Cadastrar</button>
+    </div>
+
+    <!-- Painel de Login -->
+    <div class="auth-panel" id="panel-login" role="tabpanel" aria-labelledby="tab-login-btn">
+      <form id="login-form" class="auth-form">
+        <div class="demo-field">
+          <label for="login-email">E-mail</label>
+          <input type="email" id="login-email" required placeholder="seu@email.com">
+        </div>
+        <div class="demo-field">
+          <label for="login-password">Senha</label>
+          <input type="password" id="login-password" required placeholder="Sua senha">
+        </div>
+        <button class="demo-button" type="submit" style="width: 100%; margin-top: 6px;">Entrar na Conta</button>
+      </form>
+    </div>
+
+    <!-- Painel de Cadastro -->
+    <div class="auth-panel" id="panel-signup" role="tabpanel" aria-labelledby="tab-signup-btn" hidden>
+      <form id="signup-form" class="auth-form">
+        <div class="demo-field">
+          <label for="signup-name">Nome Completo</label>
+          <input type="text" id="signup-name" required placeholder="Seu nome">
+        </div>
+        <div class="demo-field">
+          <label for="signup-email">E-mail</label>
+          <input type="email" id="signup-email" required placeholder="seu@email.com">
+        </div>
+        <div class="demo-field">
+          <label for="signup-password">Senha (mín. 6 caracteres)</label>
+          <input type="password" id="signup-password" required minlength="6" placeholder="Crie uma senha forte">
+        </div>
+        <button class="demo-button" type="button" id="signup-submit-btn" style="width: 100%; margin-top: 6px; background: #10b981; border-color: #10b981;">Criar Conta</button>
+      </form>
+    </div>
+
+    <div class="auth-message" id="auth-message" role="status" aria-live="polite"></div>
   </dialog>
 
   <!-- Banner LGPD e Aceite de Cookies (Exigido pelas Leis do Brasil e Políticas do Google) -->
@@ -1508,6 +1574,189 @@
           copyStatus.textContent = "";
         }, 3000);
       });
+
+      // ==========================================
+      // INTEGRAÇÃO SUPABASE (LOGIN & CADASTRO)
+      // ==========================================
+      const SUPABASE_URL = "https://abepcdmphcuorfsdfmco.supabase.co";
+      const SUPABASE_ANON_KEY = "sb_publishable_AlsBOETz8g3rEN3ZZvzZHQ_PZX5qGZn";
+
+      let supabaseClient = null;
+      if (window.supabase) {
+        supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+      }
+
+      const authTriggerBtn = document.getElementById("auth-trigger-btn");
+      const authBtnText = document.getElementById("auth-btn-text");
+      const mobileAuthLink = document.getElementById("mobile-auth-link");
+      const authDialog = document.getElementById("auth-dialog");
+      const tabLoginBtn = document.getElementById("tab-login-btn");
+      const tabSignupBtn = document.getElementById("tab-signup-btn");
+      const panelLogin = document.getElementById("panel-login");
+      const panelSignup = document.getElementById("panel-signup");
+      const loginForm = document.getElementById("login-form");
+      const signupForm = document.getElementById("signup-form");
+      const signupSubmitBtn = document.getElementById("signup-submit-btn");
+      const authMessage = document.getElementById("auth-message");
+
+      function openAuthModal(mode = "login") {
+        if (!authDialog) return;
+        if (mode === "login") {
+          tabLoginBtn.click();
+        } else {
+          tabSignupBtn.click();
+        }
+        authMessage.textContent = "";
+        try {
+          authDialog.showModal();
+        } catch (e) {}
+      }
+
+      if (authTriggerBtn) {
+        authTriggerBtn.addEventListener("click", () => openAuthModal("login"));
+      }
+
+      if (mobileAuthLink) {
+        mobileAuthLink.addEventListener("click", (e) => {
+          e.preventDefault();
+          mobileNav.hidden = true;
+          menuButton.setAttribute("aria-expanded", "false");
+          menuButton.setAttribute("aria-label", "Abrir menu");
+          menuButton.querySelector("use").setAttribute("href", "#i-menu");
+          openAuthModal("login");
+        });
+      }
+
+      if (tabLoginBtn && tabSignupBtn) {
+        tabLoginBtn.addEventListener("click", () => {
+          tabLoginBtn.classList.add("is-active");
+          tabLoginBtn.setAttribute("aria-selected", "true");
+          tabSignupBtn.classList.remove("is-active");
+          tabSignupBtn.setAttribute("aria-selected", "false");
+          panelLogin.hidden = false;
+          panelSignup.hidden = true;
+          authMessage.textContent = "";
+        });
+        tabSignupBtn.addEventListener("click", () => {
+          tabSignupBtn.classList.add("is-active");
+          tabSignupBtn.setAttribute("aria-selected", "true");
+          tabLoginBtn.classList.remove("is-active");
+          tabLoginBtn.setAttribute("aria-selected", "false");
+          panelSignup.hidden = false;
+          panelLogin.hidden = true;
+          authMessage.textContent = "";
+        });
+      }
+
+      async function checkUserSession() {
+        if (!supabaseClient) return;
+        try {
+          const { data: { session }, error } = await supabaseClient.auth.getSession();
+          if (session && session.user) {
+            updateAuthUI(session.user);
+          }
+        } catch (err) {
+          console.error("Erro ao verificar sessão do Supabase:", err);
+        }
+      }
+
+      function updateAuthUI(user) {
+        const userEmail = user.email || "Cliente";
+        if (authBtnText) {
+          authBtnText.textContent = userEmail.length > 18 ? userEmail.substring(0, 16) + "..." : userEmail;
+        }
+        if (authTriggerBtn) {
+          authTriggerBtn.title = "Sair da conta";
+          authTriggerBtn.onclick = async () => {
+            if (supabaseClient) {
+              await supabaseClient.auth.signOut();
+              window.location.reload();
+            }
+          };
+        }
+        if (mobileAuthLink) {
+          mobileAuthLink.innerHTML = `Sair (${userEmail}) <svg width="17" height="17" aria-hidden="true"><use href="#i-close"/></svg>`;
+          mobileAuthLink.href = "#sair";
+          mobileAuthLink.onclick = async (e) => {
+            e.preventDefault();
+            if (supabaseClient) {
+              await supabaseClient.auth.signOut();
+              window.location.reload();
+            }
+          };
+        }
+      }
+
+      if (supabaseClient) {
+        checkUserSession();
+
+        if (loginForm) {
+          loginForm.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const emailInput = document.getElementById("login-email").value.trim();
+            const passwordInput = document.getElementById("login-password").value;
+            
+            authMessage.style.color = "var(--cyan)";
+            authMessage.textContent = "Autenticando...";
+
+            const { data, error } = await supabaseClient.auth.signInWithPassword({
+              email: emailInput,
+              password: passwordInput
+            });
+
+            if (error) {
+              authMessage.style.color = "#dc2626";
+              authMessage.textContent = "Erro ao entrar: " + error.message;
+            } else {
+              authMessage.style.color = "#10b981";
+              authMessage.textContent = "Login bem-sucedido! Atualizando...";
+              window.setTimeout(() => {
+                authDialog.close();
+                window.location.reload();
+              }, 1000);
+            }
+          });
+        }
+
+        if (signupSubmitBtn) {
+          signupSubmitBtn.addEventListener("click", async (e) => {
+            e.preventDefault();
+            const nameInput = document.getElementById("signup-name").value.trim();
+            const emailInput = document.getElementById("signup-email").value.trim();
+            const passwordInput = document.getElementById("signup-password").value;
+
+            if (!nameInput || !emailInput || !passwordInput) {
+              authMessage.style.color = "#dc2626";
+              authMessage.textContent = "Por favor, preencha todos os campos.";
+              return;
+            }
+
+            authMessage.style.color = "var(--cyan)";
+            authMessage.textContent = "Criando sua conta...";
+
+            const { data, error } = await supabaseClient.auth.signUp({
+              email: emailInput,
+              password: passwordInput,
+              options: {
+                data: {
+                  full_name: nameInput
+                }
+              }
+            });
+
+            if (error) {
+              authMessage.style.color = "#dc2626";
+              authMessage.textContent = "Erro no cadastro: " + error.message;
+            } else {
+              authMessage.style.color = "#10b981";
+              authMessage.textContent = "Conta criada com sucesso! Verifique seu e-mail ou faça login.";
+              window.setTimeout(() => {
+                tabLoginBtn.click();
+              }, 2000);
+            }
+          });
+        }
+      }
     })();
   </script>
 </body>
