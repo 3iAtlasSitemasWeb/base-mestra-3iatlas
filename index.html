@@ -1,0 +1,1514 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f1f5f9">
+  <meta name="author" content="3iATLASIA">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  
+  <!-- SEO & Social Meta Tags -->
+  <title>3iATLASIA | Aplicativos e Sistemas Web Sob Medida</title>
+  <meta name="description" content="Aplicativos e sistemas web com identidade própria, segurança de dados e planos acessíveis. Conheça a 3iATLASIA e suas soluções digitais em preparação.">
+  <meta name="keywords" content="3iATLASIA, aplicativos, sistemas web, desenvolvimento sob medida, soluções digitais, LGPD, Orça Fácil, Estoque Inteligente, Agenda Pro, freemium, teste 30 dias">
+  <link rel="canonical" href="https://3iatlasia.com.br/">
+  
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="3iATLASIA">
+  <meta property="og:title" content="3iATLASIA | Tecnologia para ir além">
+  <meta property="og:description" content="Seu negócio. Um passo à frente. Aplicativos e sistemas web sob medida, com identidade própria e compromisso com a proteção dos seus dados.">
+  <meta property="og:url" content="https://3iatlasia.com.br/">
+  <meta property="og:image" content="https://3iatlasia.com.br/assets/og-image.jpg">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="3iATLASIA | Tecnologia para ir além">
+  <meta name="twitter:description" content="Aplicativos e sistemas web sob medida para transformar desafios reais em possibilidades de crescimento.">
+  <meta name="twitter:image" content="https://3iatlasia.com.br/assets/og-image.jpg">
+
+  <!-- JSON-LD Structured Data (SEO Schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "3iATLASIA",
+    "url": "https://3iatlasia.com.br/",
+    "logo": "https://3iatlasia.com.br/logo.png",
+    "description": "Desenvolvimento de aplicativos e sistemas web sob medida com foco em identidade, LGPD e planos acessíveis.",
+    "email": "sac3iatlassistemasweb@yahoo.com",
+    "sameAs": []
+  }
+  </script>
+
+  <style>
+    /* OPÇÃO 2 CORRIGIDA: Fundo cinza suave não irritante (#f1f5f9 / #f4f6f9), cartões em branco limpo (#ffffff), textos em grafite escuro (#0f172a) e detalhes em azul corporativo (#0284c7) */
+    :root{
+      color-scheme:light;
+      --bg:#f4f6f9;
+      --panel:#ffffff;
+      --panel2:#e8ecf2;
+      --line:#d8e2ec;
+      --cyan:#0284c7;
+      --white:#0f172a;
+      --muted:#475569;
+      --quiet:#64748b;
+      --content:1230px
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:92px}
+    body{margin:0;background:var(--bg);color:var(--white);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:14px;line-height:1.6;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    button{font:inherit;color:inherit;cursor:pointer}
+    img,svg{display:block}
+    :focus-visible{outline:2px solid var(--cyan);outline-offset:4px}
+    ::selection{background:#0284c730;color:#0f172a}
+    h1,h2,h3,p{margin:0}
+    h1,h2,h3,.brand,.mono{font-family:ui-sans-serif,system-ui,"Segoe UI",sans-serif;letter-spacing:-.045em}
+    .shell{width:min(100% - 56px,var(--content));margin-inline:auto}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    .skip-link{position:fixed;z-index:99;top:10px;left:10px;padding:12px 18px;background:var(--cyan);color:#ffffff;border-radius:6px;transform:translateY(-150%)}
+    .skip-link:focus{transform:translateY(0)}
+    .eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--cyan);font-size:10px;font-weight:700;letter-spacing:1.7px;line-height:1.5}
+    .status-dot{width:6px;height:6px;flex:0 0 auto;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 4px #0284c715,0 0 13px #0284c750}
+    .button{display:inline-flex;min-height:50px;align-items:center;justify-content:center;gap:14px;padding:13px 20px;border:1px solid transparent;border-radius:7px;font-size:12px;font-weight:700;transition:transform .2s,background .2s,border-color .2s,color .2s}
+    .button-primary{background:var(--cyan);color:#ffffff}
+    .button-primary:hover{background:#0369a1;transform:translateY(-2px)}
+    .button-quiet{padding-inline:5px;background:transparent;color:#334155}
+    .button-quiet:hover,.text-link:hover{color:var(--cyan)}
+    .text-link{display:inline-flex;align-items:center;gap:12px;color:var(--cyan);font-size:12px;font-weight:700}
+
+    /* Cabeçalho e navegação */
+    .site-header{position:sticky;top:0;z-index:40;background:#ffffffed;backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+    .header-inner{height:82px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+    .brand{display:inline-flex;align-items:center;gap:10px;flex-shrink:0;font-size:20px;font-weight:800;letter-spacing:-1px}
+    .brand-mark{width:36px;height:36px;overflow:hidden;border-radius:9px}
+    .brand-ia,.brand-dot{color:var(--cyan)}
+    .desktop-nav{display:flex;align-items:center;gap:24px}
+    .desktop-nav a{position:relative;padding:12px 0;color:#64748b;font-size:11px;transition:color .2s}
+    .desktop-nav a:hover,.desktop-nav a.is-active{color:var(--white)}
+    .desktop-nav a.is-active:after{position:absolute;bottom:4px;left:50%;width:4px;height:4px;border-radius:50%;background:var(--cyan);content:""}
+    .header-actions-group{display:flex;align-items:center;gap:12px}
+    .header-cta{display:inline-flex;align-items:center;gap:10px;padding:11px 15px;border:1px solid #0284c743;border-radius:6px;color:#0284c7;font-size:11px;font-weight:700}
+    .header-cta:hover{background:#0284c710}
+    
+    /* Seletor de Idiomas Inspirado no Print */
+    .lang-selector-wrap{position:relative}
+    .lang-btn{display:inline-flex;align-items:center;gap:8px;padding:9px 12px;border:1px solid var(--line);border-radius:6px;background:#ffffff;color:var(--muted);font-size:11px;font-weight:600}
+    .lang-btn:hover{border-color:var(--cyan);color:var(--cyan)}
+    .lang-dropdown{position:absolute;right:0;top:calc(100% + 6px);width:160px;padding:6px 0;border:1px solid var(--line);border-radius:8px;background:#ffffff;box-shadow:0 10px 25px rgba(0,0,0,0.08);list-style:none;margin:0;z-index:50}
+    .lang-dropdown[hidden]{display:none}
+    .lang-dropdown li a{display:block;padding:8px 16px;color:#334155;font-size:11px;transition:background .15s,color .15s}
+    .lang-dropdown li a:hover{background:#f0f9ff;color:var(--cyan)}
+
+    .menu-toggle{display:none;width:44px;height:44px;align-items:center;justify-content:center;background:transparent;border:1px solid var(--line);border-radius:7px;color:var(--white)}
+    .mobile-nav{padding:8px 22px 19px;border-top:1px solid var(--line);background:#ffffff}
+    .mobile-nav[hidden]{display:none}
+    .mobile-nav a{display:flex;justify-content:space-between;align-items:center;padding:14px 4px;border-bottom:1px solid var(--line);font-size:13px;color:var(--white)}
+
+    /* Hero */
+    .hero{position:relative;min-height:635px;isolation:isolate;overflow:hidden;background:radial-gradient(ellipse at 77% 43%,#e2e8f0 0%,#f1f5f9 37%,var(--bg) 72%)}
+    .hero:before{position:absolute;z-index:-1;inset:0;background-image:linear-gradient(#0284c708 1px,transparent 1px),linear-gradient(90deg,#0284c708 1px,transparent 1px);background-size:72px 72px;content:"";mask-image:linear-gradient(90deg,transparent,#000 55%)}
+    .hero:after{position:absolute;z-index:-1;inset:0;background:linear-gradient(90deg,#f4f6f9 0%,#f4f6f9f5 34%,#f4f6f94d 70%,#f4f6f91a 100%),linear-gradient(0deg,var(--bg),transparent 20%);content:""}
+    .hero-inner{position:relative;min-height:635px;padding-top:77px;padding-bottom:85px}
+    .hero-art{position:absolute;z-index:-2;top:0;right:-10%;width:min(79vw,1000px);height:100%;opacity:.85}
+    .hero-art svg{width:100%;height:100%;overflow:visible}
+    .hero-copy{position:relative;width:580px;max-width:100%;animation:rise .7s both}
+    .hero-eyebrow{padding:7px 11px;border:1px solid #0284c72b;border-radius:4px;background:#0284c709;font-size:9px;letter-spacing:1.4px;color:var(--cyan)}
+    .hero h1{margin-top:25px;font-size:clamp(48px,6.5vw,80px);font-weight:600;line-height:1.05;letter-spacing:-4px}
+    .hero h1 span{color:var(--cyan)}
+    .hero-copy>p{max-width:415px;margin-top:23px;color:var(--muted);font-size:13px;line-height:1.9}
+    .hero-actions{display:flex;align-items:center;flex-wrap:wrap;gap:15px;margin-top:28px}
+    .hero-assurance{display:flex;align-items:center;gap:9px;margin-top:26px;color:var(--quiet);font-size:10px}
+    .hero-assurance svg{color:var(--cyan)}
+    .hero-caption{position:absolute;right:22px;bottom:102px;display:flex;align-items:center;gap:13px;color:var(--quiet);font-size:8px;letter-spacing:1.5px;line-height:1.8}
+    .hero-caption strong{color:var(--white);font-weight:600}
+    .caption-cross{color:var(--cyan);font-size:23px}
+    .caption-line{width:44px;height:1px;background:#0284c757}
+    .scroll-cue{position:absolute;bottom:24px;left:28px;display:flex;align-items:center;gap:17px;color:var(--quiet);font-size:8px;letter-spacing:1.8px}
+    .scroll-cue svg{color:var(--cyan)}
+
+    /* Faixa de diferenciais */
+    .promise-strip{border-block:1px solid var(--line);background:#ffffff}
+    .promise-inner{min-height:86px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .promise-item{display:flex;align-items:center;gap:11px;color:var(--muted);font-size:11px}
+    .promise-item svg{color:var(--cyan)}
+
+    /* Soluções & Modelo Freemium */
+    .solutions-section{position:relative;padding-top:100px;padding-bottom:85px;overflow:hidden}
+    .solutions-section:before{position:absolute;top:16%;right:-170px;width:310px;height:310px;border:1px solid #0284c715;border-radius:50%;content:"";pointer-events:none}
+    .solutions-header{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,.72fr);gap:60px;align-items:end;padding-bottom:42px}
+    .solutions-heading{display:flex;flex-direction:column;margin-top:20px;font-size:clamp(35px,4.5vw,54px);font-weight:550;line-height:1.08;letter-spacing:-2.5px}
+    .solutions-heading span:last-child{color:var(--cyan)}
+    .solutions-intro{max-width:430px;color:var(--muted);font-size:13px;line-height:1.85}
+    
+    /* Aviso de Modelo Freemium / Teste de 30 Dias */
+    .freemium-banner{margin-bottom:30px;padding:20px 24px;border:1px solid #0284c73a;border-radius:12px;background:linear-gradient(135deg,#f0f9ff 0%,#e0f2fe 100%);display:flex;align-items:flex-start;gap:16px}
+    .freemium-banner svg{flex:0 0 auto;color:var(--cyan);margin-top:2px}
+    .freemium-banner h4{font-size:14px;font-weight:700;color:var(--white);margin-bottom:4px}
+    .freemium-banner p{font-size:12px;color:var(--muted);line-height:1.7}
+
+    .solutions-toolbar{position:relative;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0;border-block:1px solid var(--line)}
+    .toolbar-label{color:var(--cyan);font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}
+    .filter-list{display:flex;flex-wrap:wrap;gap:8px}
+    .filter-button{min-height:38px;padding:8px 15px;border:1px solid var(--line);border-radius:30px;background:transparent;color:var(--muted);font-size:11px;font-weight:650;transition:.2s}
+    .filter-button:hover{border-color:#0284c766;color:var(--white)}
+    .filter-button[aria-pressed="true"]{border-color:var(--cyan);background:var(--cyan);color:#ffffff}
+    
+    .solutions-grid{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;padding-top:16px}
+    .app-card{display:flex;min-width:0;min-height:460px;flex-direction:column;padding:20px;border:1px solid var(--line);border-radius:17px;background:var(--panel);box-shadow:0 4px 20px rgba(0,0,0,0.03);transition:transform .2s,border-color .2s,background .2s}
+    .app-card:hover{transform:translateY(-3px);border-color:#0284c755;background:#ffffff}
+    .app-card[hidden]{display:none}
+    .app-card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+    .app-icon{display:grid;width:43px;height:43px;place-items:center;border:1px solid #0284c74f;border-radius:12px;background:#0284c710;color:var(--cyan)}
+    .app-meta{display:flex;flex-direction:column;align-items:flex-end;gap:5px;text-align:right}
+    .app-category{color:var(--quiet);font-size:10px;font-weight:700}
+    .app-status{display:inline-flex;align-items:center;gap:7px;color:var(--cyan);font-size:9px;font-weight:700;letter-spacing:.7px;text-transform:uppercase}
+    .app-status i{width:5px;height:5px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 4px #0284c717}
+    
+    .app-badge-free{display:inline-block;margin-top:10px;padding:4px 8px;border-radius:4px;background:#f0f9ff;color:var(--cyan);font-size:9px;font-weight:700;border:1px solid #0284c730}
+
+    .preview-shell{margin-top:16px;padding:12px;border:1px solid var(--line);border-radius:12px;background:#09111d}
+    .preview-heading{display:flex;align-items:center;justify-content:space-between;color:#7c8a9d;font-size:9px;font-weight:700;letter-spacing:1.1px;text-transform:uppercase}
+    .preview-indicator{width:5px;height:5px;border-radius:50%;background:var(--cyan)}
+    .preview-scene{position:relative;height:140px;margin-top:10px;overflow:hidden;border:1px solid #96a5b81e;border-radius:8px;background:radial-gradient(ellipse at 72% 72%,#0284c717,transparent 40%),#0b1726}
+    .preview-scene:before,.preview-scene:after{position:absolute;border:1px solid #0284c722;border-radius:50%;content:""}
+    .preview-scene:before{right:-45px;bottom:-68px;width:180px;height:180px}
+    .preview-scene:after{top:-65px;left:-45px;width:150px;height:150px}
+    .preview-window{position:absolute;right:14px;bottom:14px;left:14px;overflow:hidden;border:1px solid #96a5b833;border-radius:8px;background:#0c1523e8;box-shadow:0 18px 32px #0004}
+    .preview-window-top{display:flex;gap:4px;padding:8px 10px;border-bottom:1px solid #ffffff12}
+    .preview-window-top i{width:4px;height:4px;border-radius:50%;background:#96a5b875}
+    .preview-window-top i:first-child{background:var(--cyan)}
+    .preview-window-body{display:grid;grid-template-columns:42px 1fr;min-height:80px}
+    .preview-rail{display:flex;flex-direction:column;gap:8px;padding:12px 8px;border-right:1px solid #ffffff13}
+    .preview-rail i{height:4px;border-radius:10px;background:#96a5b835}
+    .preview-rail i:first-child{width:75%;background:var(--cyan)}
+    .preview-canvas{position:relative;padding:10px}
+    .preview-line{display:block;width:43%;height:4px;border-radius:10px;background:#eef4fa75}
+    .preview-line.short{width:24%;margin-top:8px;background:#96a5b841}
+    .preview-concept{position:absolute;right:10px;bottom:8px;left:10px;height:38px;border:1px solid #0284c739;border-radius:6px;background:#0284c709}
+    .preview-concept:before,.preview-concept:after{position:absolute;left:10px;width:37%;height:4px;border-radius:10px;background:#eef4fa57;content:""}
+    .preview-concept:before{top:10px}
+    .preview-concept:after{top:20px;width:22%;background:#96a5b850}
+    .concept-orbit{position:absolute;right:19px;bottom:-19px;width:50px;height:50px;border:1px solid var(--cyan);border-radius:50%}
+    .stock .concept-orbit{right:26px;bottom:9px;width:8px;height:28px;border:1px solid #0284c78c;border-radius:3px;box-shadow:-13px 10px 0 -1px #0c1523, -13px 10px 0 0 #0284c755,13px 2px 0 -1px #0c1523,13px 2px 0 0 #0284c755}
+    .calendar .concept-orbit{right:19px;bottom:16px;width:9px;height:9px;border:0;background:var(--cyan);box-shadow:0 0 0 8px #0284c720}
+    
+    .app-content{flex:1;padding-top:16px}
+    .app-name{font-size:20px;font-weight:650;line-height:1.2;letter-spacing:-1px}
+    .app-description{margin-top:8px;color:var(--muted);font-size:11px;line-height:1.75}
+    .app-action{width:100%;display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:15px;padding:12px 0 4px;border:0;border-top:1px solid var(--line);background:transparent;text-align:left;font-size:11px;font-weight:700}
+    .app-action svg{color:var(--cyan);transition:transform .2s}
+    .app-action:hover{color:var(--cyan)}
+    .app-action:hover svg{transform:translate(3px,-3px)}
+    
+    .solutions-footer{display:flex;align-items:center;justify-content:space-between;gap:25px;padding-top:46px}
+    .solutions-footer p{max-width:400px;font-size:22px;font-weight:600;line-height:1.3;letter-spacing:-.7px}
+
+    /* Empresa e diferenciais */
+    .about-section{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:85px;padding-top:25px;padding-bottom:110px}
+    .about-visual{position:relative;min-height:365px;overflow:hidden;border:1px solid var(--line);border-radius:16px;background:radial-gradient(ellipse at center,#0284c715,transparent 70%),#e8ecf2}
+    .about-visual:after{position:absolute;top:14px;left:19px;color:var(--cyan);font-size:22px;content:"+"}
+    .orbit{position:absolute;top:45%;left:50%;width:245px;height:245px;border:1px solid #0284c722;border-radius:50%;transform:translate(-50%,-50%)}
+    .orbit.small{width:165px;height:165px;border-color:#0284c73a}
+    .orbit.large{width:335px;height:335px;border-color:#0284c712}
+    .about-core{position:absolute;top:45%;left:50%;display:grid;width:90px;height:90px;place-items:center;border:1px solid #0284c743;border-radius:23px;background:#e0f2fe;box-shadow:0 0 45px #0284c715;transform:translate(-50%,-50%)}
+    .about-core svg{width:60px;height:60px}
+    .orbit-point{position:absolute;top:36%;left:calc(50% + 112px);width:9px;height:9px;border-radius:50%;background:var(--cyan);box-shadow:0 0 15px #0284c770}
+    .orbit-point.two{top:60%;left:calc(50% - 60px);width:6px;height:6px;background:#0ea5e9}
+    .visual-label{position:absolute;right:0;bottom:25px;left:0;color:var(--quiet);text-align:center;font-size:8px;letter-spacing:2px}
+    .about-copy h2,.advantages-intro h2,.faq-intro h2{margin-top:21px;font-size:37px;font-weight:600;line-height:1.17;letter-spacing:-1.8px}
+    .about-copy h2 span,.advantages-intro h2 span{color:var(--cyan)}
+    .about-copy p{max-width:445px;margin-top:18px;color:var(--muted);font-size:12px;line-height:1.9}
+    .about-copy .text-link{margin-top:22px}
+    
+    .advantages-section{padding-block:82px;border-block:1px solid var(--line);background:var(--panel2)}
+    .advantages-layout{display:grid;grid-template-columns:.92fr 1.08fr;gap:90px}
+    .advantages-intro h2{font-size:35px}
+    .advantages-intro h2 span,.faq-intro h2 span{color:var(--muted)}
+    .advantages-intro p{max-width:340px;margin-top:19px;color:var(--muted);font-size:12px;line-height:1.9}
+    .intro-line{display:block;width:62px;height:2px;margin-top:28px;background:var(--cyan)}
+    .advantage{display:flex;gap:22px;padding:24px 0;border-bottom:1px solid var(--line)}
+    .advantage:first-child{padding-top:3px}
+    .advantage:last-child{padding-bottom:0;border-bottom:0}
+    .advantage-number{padding-top:4px;color:var(--quiet);font-size:10px}
+    .advantage-heading{display:flex;align-items:center;gap:13px}
+    .advantage-heading svg{flex:0 0 auto;color:var(--cyan)}
+    .advantage-heading h3{font-size:18px;font-weight:600;letter-spacing:-.5px}
+    .advantage-content p{margin:10px 0 0 36px;color:var(--muted);font-size:11px;line-height:1.9}
+
+    /* Seções Expandidas e em Branco inspiradas no print (Empresa, Recursos, Produtos, Redes Sociais) */
+    .footer-expansion-section{padding:70px 0;border-top:1px solid var(--line);background:#ffffff}
+    .expansion-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px}
+    .expansion-col h3{font-size:15px;font-weight:700;color:var(--white);margin-bottom:16px;letter-spacing:-.3px}
+    .expansion-links{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+    .expansion-links a{color:var(--muted);font-size:12px;transition:color .2s}
+    .expansion-links a:hover{color:var(--cyan)}
+    .blank-placeholder{display:inline-block;padding:2px 8px;background:#f1f5f9;border:1px dashed #cbd5e1;border-radius:4px;color:#94a3b8;font-size:10px;font-style:italic}
+
+    /* FAQ */
+    .faq-section{display:grid;grid-template-columns:.92fr 1.08fr;gap:90px;padding-block:90px}
+    .faq-intro h2{font-size:35px}
+    .faq-item{border-bottom:1px solid var(--line)}
+    .faq-item summary{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:21px 0;list-style:none;cursor:pointer;font-size:12px;font-weight:650}
+    .faq-item summary::-webkit-details-marker{display:none}
+    .faq-item summary svg{flex:0 0 auto;color:var(--quiet);transition:transform .2s}
+    .faq-item[open] summary svg{transform:rotate(180deg);color:var(--cyan)}
+    .faq-item p{margin:0 22px 20px 0;color:var(--muted);font-size:11px;line-height:1.9}
+
+    /* Contato e rodapé */
+    .contact-section{padding-bottom:65px}
+    .contact-panel{position:relative;padding:43px 55px 18px;overflow:hidden;border:1px solid #0284c73d;border-radius:16px;background:radial-gradient(ellipse at 93% 0%,#0284c720,transparent 58%),#f0f9ff}
+    .contact-panel:after{position:absolute;top:50px;right:-150px;width:420px;height:420px;border:1px solid #0284c71a;border-radius:50%;pointer-events:none;content:""}
+    .contact-topline{display:flex;align-items:center;justify-content:space-between}
+    .contact-arrow{color:var(--cyan)}
+    .contact-panel h2{margin-top:8px;font-size:41px;font-weight:600;line-height:1.2;letter-spacing:-2px}
+    .contact-panel h2 span{color:var(--cyan)}
+    .contact-panel>p{margin-top:17px;color:var(--muted);font-size:12px;line-height:1.85}
+    .contact-panel>.button{margin-top:25px}
+    .contact-bottom{display:flex;align-items:center;justify-content:space-between;gap:17px;margin-top:36px;padding-top:21px;border-top:1px solid #0284c720}
+    .email-link{display:inline-flex;align-items:center;gap:10px;color:var(--white);font-size:12px;overflow-wrap:anywhere}
+    .email-link svg{flex:0 0 auto;color:var(--cyan)}
+    .email-link:hover{color:var(--cyan)}
+    .copy-email{display:inline-flex;align-items:center;gap:8px;padding:8px;border:0;background:transparent;color:var(--quiet);font-size:10px}
+    .copy-email:hover{color:var(--cyan)}
+    .copy-status{min-height:22px;margin-top:4px;color:var(--cyan);font-size:10px}
+    
+    .site-footer{padding-bottom:24px}
+    .footer-top{display:flex;align-items:center;justify-content:space-between;gap:28px;padding:5px 0 37px}
+    .footer-tagline{margin-top:13px;color:var(--quiet);font-size:10px;line-height:1.8}
+    .footer-socials{display:flex;gap:15px;margin-top:14px;color:var(--quiet)}
+    .footer-socials a:hover{color:var(--cyan)}
+    .footer-links{display:flex;gap:25px;color:var(--muted);font-size:11px}
+    .footer-links a:hover,.footer-bottom a:hover,.footer-bottom button:hover{color:var(--cyan)}
+    .footer-security{display:flex;align-items:center;gap:10px;color:var(--quiet);font-size:10px;line-height:1.7}
+    .footer-security svg{flex:0 0 auto;color:var(--cyan)}
+    .footer-bottom{display:flex;align-items:center;justify-content:space-between;gap:18px;padding-top:22px;border-top:1px solid var(--line);color:var(--quiet);font-size:9px}
+    .footer-bottom a,.footer-bottom button{display:inline-flex;align-items:center;gap:7px;padding:5px 0;border:0;background:transparent;color:inherit;font-size:inherit}
+
+    /* Janelas acessíveis */
+    dialog{width:min(500px,calc(100% - 32px));max-height:calc(100dvh - 32px);overflow:auto;padding:30px;border:1px solid #cbd5e1;border-radius:16px;background:#ffffff;color:#0f172a;box-shadow:0 24px 60px rgba(0,0,0,0.15)}
+    dialog::backdrop{background:rgba(15,23,42,0.6);backdrop-filter:blur(5px)}
+    .dialog-close{position:absolute;top:14px;right:14px;display:grid;width:36px;height:36px;place-items:center;border:1px solid #cbd5e1;border-radius:7px;background:#f1f5f9;color:#0f172a}
+    .dialog-icon{margin-bottom:15px;color:var(--cyan)}
+    .dialog-title{padding-right:32px;font-size:23px;font-weight:650;line-height:1.25;letter-spacing:-1px}
+    .dialog-subtitle{margin-top:12px;color:var(--muted);font-size:12px;line-height:1.8}
+    .dialog-body{display:grid;gap:12px;margin-top:19px;padding:16px;border:1px solid #e2e8f0;border-radius:9px;background:#f8fafc;color:#334155;font-size:11px;line-height:1.85}
+    .dialog-body p{margin:0}
+    .dialog-note{color:var(--quiet)}
+    .dialog-link{display:inline-flex;align-items:center;gap:10px;margin-top:18px;color:var(--cyan);font-size:11px;font-weight:700}
+    .dialog-demo-cta{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;margin-top:21px;padding:13px 15px;border:1px solid #0284c755;border-radius:8px;background:#f0f9ff;color:var(--cyan);font-size:11px;font-weight:700;text-align:left}
+    .dialog-demo-cta:hover{background:#e0f2fe}
+    
+    /* Estilos do Popup Automático de Boas-Vindas Inspirado no Print */
+    .welcome-dialog{padding:0;overflow:hidden;border:0;border-radius:16px;box-shadow:0 25px 50px -12px rgba(0,0,0,0.25)}
+    .welcome-header{background:var(--cyan);color:#ffffff;padding:24px 20px;text-align:center;position:relative}
+    .welcome-header h3{font-size:18px;font-weight:700;margin-top:8px;letter-spacing:-.5px}
+    .welcome-body{padding:24px;text-align:center}
+    .welcome-body p{color:var(--muted);font-size:12px;line-height:1.7;margin-bottom:20px}
+    .welcome-actions{display:grid;gap:10px}
+    .welcome-btn-primary{width:100%;min-height:44px;background:#10b981;color:#ffffff;border:0;border-radius:8px;font-weight:700;font-size:12px;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:background .2s}
+    .welcome-btn-primary:hover{background:#059669}
+    .welcome-btn-secondary{background:transparent;border:0;color:var(--quiet);font-size:11px;font-weight:600;padding:6px}
+    .welcome-btn-secondary:hover{color:var(--cyan)}
+
+    /* LGPD e Google Compliant Cookie Banner Styles */
+    .cookie-banner{position:fixed;bottom:0;left:0;right:0;z-index:90;background:#ffffff;border-top:1px solid var(--line);box-shadow:0 -10px 25px rgba(0,0,0,0.08);padding:16px 0;transition:transform .3s ease}
+    .cookie-banner[hidden]{display:none}
+    .cookie-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    .cookie-text{display:flex;align-items:flex-start;gap:12px;max-width:780px}
+    .cookie-text svg{flex:0 0 auto;color:var(--cyan);margin-top:2px}
+    .cookie-text h4{font-size:13px;font-weight:700;color:var(--white);margin-bottom:3px}
+    .cookie-text p{font-size:11px;color:var(--muted);line-height:1.6}
+    .cookie-actions{display:flex;align-items:center;gap:10px;flex-shrink:0}
+
+    .demo-dialog{width:min(1180px,calc(100% - 28px));max-width:none;height:min(820px,calc(100dvh - 28px));max-height:none;padding:0;overflow:hidden;border-color:#cbd5e1;background:#ffffff}
+    .demo-dialog[open]{display:block}
+    .demo-shell{height:100%;min-height:0;display:grid;grid-template-rows:auto auto minmax(0,1fr)}
+    .demo-topbar{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px 70px 17px 24px;border-bottom:1px solid var(--line);background:#f1f5f9}
+    .demo-topbar h2{margin-top:5px;font-size:22px;font-weight:650;letter-spacing:-.8px}
+    .demo-top-actions{display:flex;align-items:center;gap:10px}
+    .demo-badge{padding:6px 9px;border:1px solid #0284c745;border-radius:30px;color:var(--cyan);font-size:8px;font-weight:800;letter-spacing:1px;background:#f0f9ff}
+    .demo-disclaimer{display:flex;align-items:flex-start;gap:11px;padding:11px 24px;border-bottom:1px solid #0284c720;background:#f0f9ff;color:#334155;font-size:10px;line-height:1.65}
+    .demo-disclaimer svg{flex:0 0 auto;margin-top:1px;color:var(--cyan)}
+    .demo-disclaimer strong{color:#0f172a}
+    
+    /* Layout Adaptado e Responsivo de Telas de Dispositivos (Corrigido para Celulares e Tablets) */
+    .demo-layout{display:grid;min-height:0;grid-template-columns:220px minmax(0,1fr)}
+    .demo-sidebar{display:flex;min-height:0;flex-direction:column;gap:7px;padding:20px 13px;border-right:1px solid var(--line);background:#f8fafc}
+    .demo-sidebar-label{padding:0 10px 7px;color:var(--quiet);font-size:9px;font-weight:800;letter-spacing:1.3px;text-transform:uppercase}
+    .demo-tab{display:flex;align-items:center;gap:11px;width:100%;padding:12px 10px;border:1px solid transparent;border-radius:8px;background:transparent;color:#475569;text-align:left}
+    .demo-tab svg{flex:0 0 auto;color:var(--quiet)}
+    .demo-tab span{display:grid;gap:3px;font-size:11px;font-weight:700}
+    .demo-tab small{color:var(--quiet);font-size:9px;font-weight:500}
+    .demo-tab[aria-selected="true"]{border-color:#0284c730;background:#f0f9ff;color:#0f172a}
+    .demo-tab[aria-selected="true"] svg{color:var(--cyan)}
+    .demo-sidebar-note{display:flex;gap:8px;margin-top:auto;padding:12px 9px;border-top:1px solid var(--line);color:var(--quiet);font-size:9px;line-height:1.65}
+    .demo-sidebar-note svg{flex:0 0 auto;color:var(--cyan)}
+    
+    .demo-content{min-width:0;min-height:0;overflow-y:auto;background:#f8fafc}
+    .demo-panel{padding:24px;animation:rise .25s both;max-width:100%;overflow-x:hidden}
+    .demo-panel[hidden]{display:none}
+    .demo-panel-head{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;margin-bottom:20px;flex-wrap:wrap}
+    .demo-kicker{color:var(--cyan);font-size:8px;font-weight:800;letter-spacing:1.5px}
+    .demo-panel-head h3{margin-top:5px;font-size:23px;font-weight:650;letter-spacing:-1px}
+    .demo-panel-head p:last-child{max-width:620px;margin-top:6px;color:var(--muted);font-size:10px;line-height:1.7}
+    
+    .demo-quiet-button,.demo-button{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:36px;padding:8px 12px;border:1px solid #cbd5e1;border-radius:7px;background:#ffffff;color:#334155;font-size:10px;font-weight:700}
+    .demo-quiet-button:hover{border-color:var(--cyan);color:var(--cyan)}
+    .demo-button{border-color:var(--cyan);background:var(--cyan);color:#ffffff}
+    .demo-button:hover{background:#0369a1}
+    
+    .demo-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-bottom:14px}
+    .demo-metric{min-width:0;padding:13px 15px;border:1px solid var(--line);border-radius:9px;background:#ffffff}
+    .demo-metric span{display:block;color:var(--quiet);font-size:9px}
+    .demo-metric strong{display:block;margin-top:4px;color:#0f172a;font-size:16px;font-weight:700;letter-spacing:-.5px}
+    
+    .demo-card{min-width:0;padding:16px;border:1px solid var(--line);border-radius:11px;background:#ffffff;overflow-x:auto}
+    .demo-card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:15px;margin-bottom:13px;flex-wrap:wrap}
+    .demo-card-head h4{font-size:13px;font-weight:700}
+    .demo-card-head p{margin-top:4px;color:var(--quiet);font-size:9px;line-height:1.6}
+    
+    .demo-field{display:grid;gap:5px;color:#334155;font-size:9px;font-weight:650}
+    .demo-field input,.demo-field select,.demo-input{width:100%;min-height:36px;padding:8px 10px;border:1px solid #cbd5e1;border-radius:6px;background:#f8fafc;color:#0f172a;font:inherit;font-size:10px}
+    .demo-field-inline{display:grid;min-width:170px;gap:5px;color:#334155;font-size:9px;font-weight:650}
+    .demo-field-inline input{min-height:34px;padding:7px 9px;border:1px solid #cbd5e1;border-radius:6px;background:#f8fafc;color:#0f172a;font:inherit;font-size:10px}
+    
+    /* Tabelas Adaptáveis em Mobile e Telas Pequenas */
+    .demo-table-wrap{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+    .demo-table{width:100%;min-width:480px;border-collapse:collapse;text-align:left}
+    .demo-table th{padding:9px 7px;border-bottom:1px solid var(--line);color:var(--quiet);font-size:8px;font-weight:700;letter-spacing:.5px;text-transform:uppercase}
+    .demo-table td{padding:8px 7px;border-bottom:1px solid #f1f5f9}
+    .demo-table td input{width:100%;min-width:60px;min-height:33px;padding:6px 8px;border:1px solid #cbd5e1;border-radius:5px;background:#f8fafc;color:#0f172a;font:inherit;font-size:10px}
+    .demo-table td input[type="number"]{min-width:54px}
+    .demo-table .budget-subtotal{color:#0f172a;font-size:10px;font-weight:700;white-space:nowrap}
+    .demo-delete-row{width:28px;height:28px;border:1px solid #cbd5e1;border-radius:5px;background:transparent;color:var(--quiet);font-size:15px}
+    .demo-delete-row:hover{border-color:#ef44445c;color:#dc2626}
+    
+    .demo-card-footer{display:flex;align-items:center;justify-content:space-between;gap:15px;padding-top:13px;flex-wrap:wrap}
+    .demo-add-button{border:0;background:transparent;color:var(--cyan);font-size:10px;font-weight:700}
+    .demo-total{display:grid;gap:3px;color:var(--quiet);font-size:9px;text-align:right}
+    .demo-total strong{color:var(--cyan);font-size:19px;letter-spacing:-.5px}
+    .demo-actions{display:flex;flex-wrap:wrap;align-items:center;gap:9px;margin-top:13px}
+    .demo-live{min-height:18px;margin-top:8px;color:var(--cyan);font-size:9px}
+    
+    .demo-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px;flex-wrap:wrap}
+    .demo-filters{display:flex;flex-wrap:wrap;gap:7px}
+    .demo-chip{padding:7px 11px;border:1px solid #cbd5e1;border-radius:30px;background:transparent;color:var(--quiet);font-size:9px}
+    .demo-chip[aria-pressed="true"]{border-color:var(--cyan);background:#f0f9ff;color:var(--cyan)}
+    
+    .demo-stock-list,.demo-agenda-list{display:grid;gap:8px}
+    .demo-stock-row{display:grid;grid-template-columns:minmax(0,1fr) auto auto;align-items:center;gap:10px;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:#ffffff}
+    .demo-stock-info{display:grid;gap:3px}
+    .demo-stock-info strong{font-size:10px}
+    .demo-stock-info span{color:var(--quiet);font-size:8px}
+    .demo-stock-state{padding:4px 6px;border:1px solid #0284c730;border-radius:20px;color:var(--cyan);background:#f0f9ff;font-size:8px;white-space:nowrap}
+    .demo-stock-state.is-low{border-color:#f59e0b45;background:#fffbeb;color:#d97706}
+    .demo-stock-controls{display:flex;align-items:center;gap:6px}
+    .demo-stock-controls button{width:26px;height:26px;border:1px solid #cbd5e1;border-radius:6px;background:#f8fafc;color:#0f172a;font-size:14px}
+    .demo-stock-controls button:hover{border-color:var(--cyan);color:var(--cyan)}
+    .demo-stock-controls strong{min-width:18px;font-size:11px;text-align:center}
+    
+    .demo-agenda-form{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(115px,1fr) minmax(90px,.7fr) auto;align-items:end;gap:8px;margin-top:14px;padding:12px;border:1px solid var(--line);border-radius:9px;background:#f1f5f9}
+    .demo-agenda-item{display:grid;grid-template-columns:75px minmax(0,1fr) auto;align-items:center;gap:10px;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:#ffffff}
+    .demo-agenda-time{display:grid;gap:2px;color:var(--quiet);font-size:8px}
+    .demo-agenda-time strong{color:var(--cyan);font-size:11px}
+    .demo-agenda-title{font-size:10px;font-weight:650}
+    .demo-agenda-item.is-done .demo-agenda-title{color:#94a3b8;text-decoration:line-through}
+    .demo-agenda-item button{padding:6px 8px;border:1px solid #cbd5e1;border-radius:6px;background:#f8fafc;color:#334155;font-size:8px}
+    .demo-agenda-item button:hover{border-color:var(--cyan);color:var(--cyan)}
+    .demo-agenda-empty{padding:20px;border:1px dashed #cbd5e1;border-radius:8px;color:var(--quiet);font-size:10px;text-align:center}
+
+    @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+    @media(min-width:1500px){.hero-art{right:-3%;width:76vw}}
+    @media(max-width:1000px){.desktop-nav{gap:18px}.header-inner{gap:15px}.hero-art{right:-20%;width:91vw}.hero-caption{right:15px}.promise-item{font-size:10px}.about-section{gap:50px}.advantages-layout,.faq-section{gap:50px}.expansion-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    
+    @media(max-width:760px){
+      html{scroll-padding-top:78px}
+      .shell{width:min(100% - 32px,var(--content))}
+      .header-inner{height:70px}
+      .brand{font-size:18px}
+      .brand-mark{width:32px;height:32px}
+      .desktop-nav{display:none}
+      .header-cta{display:none}
+      .menu-toggle{display:flex}
+      .hero,.hero-inner{min-height:670px}
+      .hero-inner{padding-top:45px;padding-bottom:190px}
+      .hero h1{font-size:clamp(42px,9vw,64px);letter-spacing:-2.5px}
+      .hero-copy>p{font-size:12px}
+      .hero-art{top:175px;right:-48%;width:158%;height:480px;opacity:.74}
+      .hero-art svg{height:100%}
+      .hero:after{background:linear-gradient(180deg,#f4f6f9 12%,#f4f6f978 61%,var(--bg)),linear-gradient(0deg,var(--bg),transparent 25%)}
+      .hero-caption{right:10px;bottom:50px;font-size:7px}
+      .hero-actions{gap:12px}
+      .button{padding-inline:14px;font-size:11px;min-height:46px}
+      .hero-assurance{max-width:350px;font-size:9px}
+      .scroll-cue{left:18px;bottom:15px;font-size:7px}
+      .promise-inner{min-height:auto;flex-wrap:wrap;justify-content:flex-start;row-gap:16px;padding-block:18px}
+      .promise-item{width:50%;gap:8px;font-size:9px}
+      .promise-item svg{width:18px}
+      .solutions-section{padding-top:55px;padding-bottom:45px}
+      .solutions-header{grid-template-columns:1fr;gap:15px;padding-bottom:24px}
+      .solutions-heading{font-size:clamp(31px,7.5vw,46px);letter-spacing:-2px}
+      .solutions-intro{font-size:12px}
+      .solutions-toolbar{align-items:flex-start;flex-direction:column}
+      .filter-list{width:100%}
+      .filter-button{flex:1 1 auto;padding-inline:9px}
+      .solutions-grid{grid-template-columns:1fr}
+      .app-card{min-height:auto}
+      .preview-scene{height:140px}
+      .solutions-footer{align-items:flex-start;flex-direction:column;padding-top:28px}
+      .solutions-footer p{font-size:19px}
+      .about-section{grid-template-columns:1fr;gap:30px;padding-top:20px;padding-bottom:55px}
+      .about-visual{min-height:270px}
+      .about-copy h2{font-size:31px}
+      .about-copy p{font-size:11px}
+      .advantages-section{padding-block:48px}
+      .advantages-layout,.faq-section{grid-template-columns:1fr;gap:28px}
+      .advantages-intro h2,.faq-intro h2{font-size:29px}
+      .intro-line{display:none}
+      .advantage{padding-block:18px}
+      .advantage-heading h3{font-size:15px}
+      .expansion-grid{grid-template-columns:1fr;gap:25px}
+      .faq-section{padding-block:52px;gap:14px}
+      .faq-item summary{font-size:11px;line-height:1.6}
+      .contact-section{padding-bottom:40px}
+      .contact-panel{padding:24px 18px 14px}
+      .contact-arrow{width:34px;height:34px}
+      .contact-panel>.eyebrow{font-size:8px;letter-spacing:1px}
+      .contact-panel h2{margin-top:16px;font-size:27px;letter-spacing:-1px}
+      .contact-bottom{align-items:flex-start;flex-direction:column;gap:7px;margin-top:22px}
+      .email-link{font-size:10px}
+      .copy-email{padding-left:0}
+      .footer-top{flex-wrap:wrap;align-items:flex-start;row-gap:22px}
+      .footer-links{gap:16px}
+      .footer-security{width:100%}
+      .footer-bottom{flex-wrap:wrap;gap:10px 18px}
+      .footer-bottom>p{width:100%}
+    }
+    
+    @media(max-width:420px){
+      .shell{width:min(100% - 24px,var(--content))}
+      .hero h1{font-size:40px}
+      .hero-actions{align-items:stretch;flex-direction:column}
+      .hero-actions .button{width:100%}
+      .promise-item{width:100%}
+    }
+
+    @media(max-width:760px){
+      .demo-dialog{width:calc(100% - 8px);height:calc(100dvh - 8px);border-radius:10px}
+      .demo-topbar{align-items:flex-start;flex-direction:column;gap:6px;padding:12px 50px 10px 12px}
+      .demo-topbar h2{font-size:17px}
+      .demo-top-actions{gap:5px;flex-wrap:wrap}
+      .demo-disclaimer{padding:8px 12px;font-size:9px}
+      .demo-layout{grid-template-columns:minmax(0,1fr);grid-template-rows:auto minmax(0,1fr)}
+      .demo-sidebar{flex-direction:row;align-items:stretch;gap:4px;padding:6px;border-right:0;border-bottom:1px solid var(--line);overflow-x:auto;-webkit-overflow-scrolling:touch}
+      .demo-sidebar-label,.demo-sidebar-note{display:none}
+      .demo-tab{min-width:105px;justify-content:center;gap:6px;padding:7px 8px}
+      .demo-tab span{font-size:9px}
+      .demo-tab small{font-size:7px}
+      .demo-tab svg{width:16px}
+      .demo-panel{padding:12px}
+      .demo-panel-head{gap:8px}
+      .demo-panel-head h3{font-size:19px}
+      .demo-panel-head p:last-child{font-size:9px}
+      .demo-metrics{grid-template-columns:repeat(1,minmax(0,1fr));gap:6px}
+      .demo-metric{padding:9px 12px}
+      .demo-metric span{font-size:8px}
+      .demo-metric strong{font-size:13px}
+      .demo-card{padding:10px}
+      .demo-card-head{flex-direction:column;gap:8px}
+      .demo-field-inline{width:100%;min-width:0}
+      .demo-agenda-form{grid-template-columns:1fr;gap:8px}
+      .demo-agenda-form .demo-field:first-child{grid-column:auto}
+      .demo-stock-row{grid-template-columns:minmax(0,1fr) auto;gap:8px}
+      .demo-stock-state{grid-column:1;grid-row:2;justify-self:start}
+      .demo-stock-controls{grid-column:2;grid-row:1/3}
+      .demo-agenda-item{grid-template-columns:55px minmax(0,1fr);gap:8px}
+      .demo-agenda-item button{grid-column:2;justify-self:start}
+      .cookie-inner{flex-direction:column;align-items:stretch}
+      .cookie-actions{justify-content:flex-end}
+    }
+
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <svg class="sr-only" aria-hidden="true">
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v15m-6-6 6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 8-4 4 4 4m8-8 4 4-4 4m-3-11-2 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-fingerprint" viewBox="0 0 24 24"><path d="M12 11a2 2 0 0 0-2 2c0 3-.5 5.5-1.4 7.5M14 13c0 2.8-.3 5.1-1 7m3-7a4 4 0 0 0-8 0c0 4-.7 6.5-1.7 8M6 14v-1a6 6 0 0 1 12 0c0 1.8-.1 3.6-.4 5.3M4 13a8 8 0 0 1 16 0c0 .7 0 1.4-.1 2.1M9 3.7a10 10 0 0 1 10.8 3.2M4.6 7.2A10 10 0 0 1 7 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 3 1.9 5.8L20 11l-6.1 2.2L12 19l-2-5.8L4 11l6-2.2L12 3Zm7 12 .9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9L19 15Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m3 7 9 6 9-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="13" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="i-receipt" viewBox="0 0 24 24"><path d="M4 3h16v18l-4-2-4 2-4-2-4 2V3Zm4 5h8m-8 4h8m-8 4h5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-boxes" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5Zm-9 9 9 5 9-5M3 16l9 5 9-5M12 13v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M16 3v4M8 3v4M3 10h18m-12 4h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#inicio" aria-label="3iATLASIA — voltar ao início">
+        <svg class="brand-mark" viewBox="0 0 96 96" aria-hidden="true"><rect width="96" height="96" rx="22" fill="#08111e"/><path d="M48 17 79 70H65L48 40 31 70H17Z" fill="#0284c7"/><path d="M29 73h38" stroke="#0284c7" stroke-width="5" stroke-linecap="round"/><circle cx="72" cy="27" r="6" fill="#0284c7"/></svg>
+        <span>3i<span class="brand-ia">ATLASIA</span><span class="brand-dot">.</span></span>
+      </a>
+      
+      <nav class="desktop-nav" aria-label="Navegação principal">
+        <a href="#solucoes">Soluções</a><a href="#sobre">Sobre nós</a><a href="#diferenciais">Diferenciais</a><a href="#contato">Contato</a>
+      </nav>
+
+      <div class="header-actions-group">
+        <!-- Seletor de Idiomas Inspirado no Print -->
+        <div class="lang-selector-wrap">
+          <button class="lang-btn" type="button" aria-expanded="false" aria-label="Selecionar idioma"><svg width="15" height="15" aria-hidden="true"><use href="#i-globe"/></svg><span>Português</span><svg width="12" height="12" aria-hidden="true"><use href="#i-chevron"/></svg></button>
+          <ul class="lang-dropdown" hidden>
+            <li><a href="#en">English (Futuro)</a></li>
+            <li><a href="#es">Español (Futuro)</a></li>
+            <li><a href="#fr">Français (Futuro)</a></li>
+            <li><a href="#de">Deutsch (Futuro)</a></li>
+            <li><a href="#jp">日本語 (Futuro)</a></li>
+            <li><a href="#pt">Português (Ativo)</a></li>
+          </ul>
+        </div>
+
+        <a class="header-cta" href="mailto:sac3iatlassistemasweb@yahoo.com?subject=Vamos%20conversar%20sobre%20meu%20projeto%20%7C%203iATLASIA">Vamos conversar <svg width="17" height="17" aria-hidden="true"><use href="#i-arrow-up"/></svg></a>
+      </div>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-navigation"><svg width="24" height="24" aria-hidden="true"><use href="#i-menu"/></svg></button>
+    </div>
+
+    <nav class="mobile-nav" id="mobile-navigation" aria-label="Navegação móvel" hidden>
+      <a href="#solucoes">Soluções <svg width="17" height="17" aria-hidden="true"><use href="#i-arrow-up"/></svg></a>
+      <a href="#sobre">Sobre nós <svg width="17" height="17" aria-hidden="true"><use href="#i-arrow-up"/></svg></a>
+      <a href="#diferenciais">Diferenciais <svg width="17" height="17" aria-hidden="true"><use href="#i-arrow-up"/></svg></a>
+      <a href="#contato">Contato <svg width="17" height="17" aria-hidden="true"><use href="#i-arrow-up"/></svg></a>
+      <a href="mailto:sac3iatlassistemasweb@yahoo.com?subject=Vamos%20conversar%20sobre%20meu%20projeto%20%7C%203iATLASIA">Fale com a 3iATLASIA <svg width="17" height="17" aria-hidden="true"><use href="#i-arrow-up"/></svg></a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 1000 700" preserveAspectRatio="xMidYMid meet">
+          <defs>
+            <radialGradient id="glow" cx="58%" cy="48%" r="52%"><stop stop-color="#0284c7" stop-opacity=".12"/><stop offset=".5" stop-color="#0ea5e9" stop-opacity=".06"/><stop offset="1" stop-color="#f4f6f9" stop-opacity="0"/></radialGradient>
+            <linearGradient id="sphere" x1=".2" y1="0" x2=".8" y2="1"><stop stop-color="#bae6fd" stop-opacity=".95"/><stop offset=".3" stop-color="#38bdf8" stop-opacity=".78"/><stop offset=".72" stop-color="#0284c7" stop-opacity=".66"/><stop offset="1" stop-color="#0369a1" stop-opacity=".95"/></linearGradient>
+            <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7dd3fc" stop-opacity=".8"/><stop offset=".45" stop-color="#0284c7" stop-opacity=".3"/><stop offset="1" stop-color="#38bdf8" stop-opacity=".82"/></linearGradient>
+            <filter id="blur"><feGaussianBlur stdDeviation="20"/></filter>
+            <clipPath id="ball"><circle cx="600" cy="340" r="146"/></clipPath>
+          </defs>
+          <ellipse cx="590" cy="360" rx="390" ry="300" fill="url(#glow)"/>
+          <circle cx="600" cy="340" r="178" fill="#38bdf8" opacity=".06" filter="url(#blur)"/>
+          <circle cx="600" cy="340" r="146" fill="url(#sphere)" opacity=".22" stroke="#bae6fd" stroke-opacity=".56"/>
+          <g clip-path="url(#ball)" fill="none" stroke="#7dd3fc" stroke-opacity=".34">
+            <ellipse cx="600" cy="340" rx="142" ry="52"/><ellipse cx="600" cy="340" rx="142" ry="98"/><ellipse cx="600" cy="340" rx="65" ry="145"/><ellipse cx="600" cy="340" rx="116" ry="145"/>
+            <path d="M455 340h290M468 280c77 33 185 34 264 0M468 400c77-33 185-34 264 0M520 210c50 75 65 189 0 260M680 210c-50 75-65 189 0 260"/>
+          </g>
+          <circle cx="600" cy="340" r="146" fill="none" stroke="#38bdf8" stroke-opacity=".74"/>
+          <g fill="none" stroke="url(#ring)" stroke-width="1.7">
+            <ellipse cx="600" cy="340" rx="257" ry="80" transform="rotate(-23 600 340)"/>
+            <ellipse cx="600" cy="340" rx="225" ry="104" transform="rotate(36 600 340)" opacity=".68"/>
+            <ellipse cx="600" cy="340" rx="285" ry="136" transform="rotate(72 600 340)" opacity=".4"/>
+          </g>
+          <g fill="#0284c7" stroke="#ffffff" stroke-width="3"><circle cx="792" cy="235" r="9"/><circle cx="440" cy="489" r="7"/><circle cx="736" cy="487" r="6"/></g>
+          <g fill="none" stroke="#0284c7" stroke-opacity=".3"><path d="M790 235 850 180h62M440 489l-50 62h-70M736 487l80 51h66"/></g>
+          <g fill="#475569" font-family="system-ui,sans-serif" font-size="10" letter-spacing="2"><text x="853" y="168">NÚCLEO DIGITAL</text><text x="244" y="568">IDEIAS CONECTADAS</text><text x="820" y="559">NOVAS POSSIBILIDADES</text></g>
+          <g stroke="#0284c7" stroke-opacity=".45"><path d="M850 178h34M300 550h30M820 540h38"/><path d="M850 174v8M300 546v8M820 536v8"/></g>
+          <g fill="#0284c7" opacity=".65"><circle cx="842" cy="315" r="2"/><circle cx="397" cy="302" r="2"/><circle cx="710" cy="171" r="2"/><circle cx="515" cy="523" r="2"/><circle cx="863" cy="407" r="2"/></g>
+        </svg>
+      </div>
+      
+      <div class="shell hero-inner">
+        <div class="hero-copy">
+          <div class="eyebrow hero-eyebrow"><span class="status-dot"></span> INTELIGÊNCIA QUE MOVE NEGÓCIOS</div>
+          <h1 id="hero-title">Seu negócio.<br>Um passo<br><span>à frente.</span></h1>
+          <p>Aplicativos, sistemas web e ferramentas digitais sob medida para transformar desafios reais em novas possibilidades de crescimento.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="mailto:sac3iatlassistemasweb@yahoo.com?subject=Vamos%20conversar%20sobre%20meu%20projeto%20%7C%203iATLASIA">Vamos criar o próximo passo <svg width="19" height="19" aria-hidden="true"><use href="#i-arrow-up"/></svg></a>
+            <a class="button button-quiet" href="#solucoes">Explorar soluções <svg width="18" height="18" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+          </div>
+          <div class="hero-assurance"><svg width="16" height="16" aria-hidden="true"><use href="#i-shield"/></svg><span>Sua identidade. Seus dados protegidos. Sua evolução.</span></div>
+        </div>
+        <div class="hero-caption" aria-hidden="true"><span class="caption-cross">+</span><span>UM ECOSSISTEMA.<br><strong>INFINITAS POSSIBILIDADES.</strong></span><span class="caption-line"></span></div>
+        <a class="scroll-cue" href="#solucoes"><span>EXPLORE O PRÓXIMO NÍVEL</span><svg width="16" height="16" aria-hidden="true"><use href="#i-down"/></svg></a>
+      </div>
+    </section>
+
+    <div class="promise-strip" aria-label="Diferenciais da 3iATLASIA">
+      <div class="shell promise-inner">
+        <div class="promise-item"><svg width="23" height="23" aria-hidden="true"><use href="#i-code"/></svg><span>Apps &amp; Sistemas Web</span></div>
+        <div class="promise-item"><svg width="23" height="23" aria-hidden="true"><use href="#i-fingerprint"/></svg><span>Identidade própria</span></div>
+        <div class="promise-item"><svg width="23" height="23" aria-hidden="true"><use href="#i-shield"/></svg><span>Conformidade LGPD</span></div>
+        <div class="promise-item"><svg width="23" height="23" aria-hidden="true"><use href="#i-spark"/></svg><span>Teste Grátis 30 Dias Úteis</span></div>
+      </div>
+    </div>
+
+    <section class="solutions-section shell" id="solucoes" aria-labelledby="solutions-heading">
+      <div class="solutions-header">
+        <div>
+          <span class="eyebrow">01 / ECOSSISTEMA EM CONSTRUÇÃO</span>
+          <h2 class="solutions-heading" id="solutions-heading"><span>Ferramentas Gratuitas.</span><span>Testes e Monetização.</span></h2>
+        </div>
+        <p class="solutions-intro">Conheça o nosso ecossistema com 30 soluções digitais. Todos os apps, sistemas e ferramentas estão disponíveis para download gratuito com funções completas liberadas por <strong>30 dias úteis</strong>.</p>
+      </div>
+
+      <!-- Banner Informativo do Modelo Freemium / Teste 30 Dias -->
+      <div class="freemium-banner" role="region" aria-label="Informações sobre o período de teste">
+        <svg width="22" height="22" aria-hidden="true"><use href="#i-spark"/></svg>
+        <div>
+          <h4>Modelo Freemium &amp; Período de Avaliação</h4>
+          <p>Após os 30 dias úteis de teste com todas as funções desbloqueadas, o sistema passará para o modo padrão: recursos avançados bloqueados, mantendo liberadas apenas as funções básicas com exibições de propagandas e anúncios para suporte e lucro operacional da empresa.</p>
+        </div>
+      </div>
+
+      <div class="solutions-toolbar">
+        <p class="toolbar-label">Explore as prévias</p>
+        <div class="filter-list" role="group" aria-label="Filtrar soluções por categoria">
+          <button class="filter-button" type="button" data-filter="Todas" aria-pressed="true">Todas</button>
+          <button class="filter-button" type="button" data-filter="Gestão" aria-pressed="false">Gestão</button>
+          <button class="filter-button" type="button" data-filter="Organização" aria-pressed="false">Organização</button>
+          <button class="filter-button" type="button" data-filter="Ferramentas" aria-pressed="false">Ferramentas</button>
+        </div>
+      </div>
+
+      <div class="solutions-grid">
+        <article class="app-card" data-category="Gestão">
+          <div class="app-card-top">
+            <div class="app-icon"><svg width="22" height="22" aria-hidden="true"><use href="#i-receipt"/></svg></div>
+            <div class="app-meta"><span class="app-category">Gestão</span><span class="app-status"><i></i>Em preparação</span></div>
+          </div>
+          <span class="app-badge-free">Teste Grátis 30 Dias Úteis</span>
+          <div class="preview-shell" aria-label="Conceito visual do Orça Fácil">
+            <div class="preview-heading"><span>Conceito visual</span><span class="preview-indicator"></span></div>
+            <div class="preview-scene">
+              <div class="preview-window">
+                <div class="preview-window-top"><i></i><i></i><i></i></div>
+                <div class="preview-window-body">
+                  <div class="preview-rail"><i></i><i></i><i></i></div>
+                  <div class="preview-canvas">
+                    <i class="preview-line"></i><i class="preview-line short"></i>
+                    <div class="preview-concept"><span class="concept-orbit"></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="app-content">
+            <h3 class="app-name">Orça Fácil</h3>
+            <p class="app-description">Uma prévia para tornar a rotina de orçamentos mais clara e organizada.</p>
+          </div>
+          <button class="app-action" type="button" data-app="orca-facil">Conhecer a proposta <svg width="17" height="17" aria-hidden="true"><use href="#i-arrow-up"/></svg></button>
+        </article>
+
+        <article class="app-card" data-category="Gestão">
+          <div class="app-card-top">
+            <div class="app-icon"><svg width="22" height="22" aria-hidden="true"><use href="#i-boxes"/></svg></div>
+            <div class="app-meta"><span class="app-category">Gestão</span><span class="app-status"><i></i>Em preparação</span></div>
+          </div>
+          <span class="app-badge-free">Teste Grátis 30 Dias Úteis</span>
+          <div class="preview-shell" aria-label="Conceito visual do Estoque Inteligente">
+            <div class="preview-heading"><span>Conceito visual</span><span class="preview-indicator"></span></div>
+            <div class="preview-scene stock">
+              <div class="preview-window">
+                <div class="preview-window-top"><i></i><i></i><i></i></div>
+                <div class="preview-window-body">
+                  <div class="preview-rail"><i></i><i></i><i></i></div>
+                  <div class="preview-canvas">
+                    <i class="preview-line"></i><i class="preview-line short"></i>
+                    <div class="preview-concept"><span class="concept-orbit"></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="app-content">
+            <h3 class="app-name">Estoque Inteligente</h3>
+            <p class="app-description">Uma ideia em construção para acompanhar a organização do estoque com mais leveza.</p>
+          </div>
+          <button class="app-action" type="button" data-app="estoque-inteligente">Conhecer a proposta <svg width="17" height="17" aria-hidden="true"><use href="#i-arrow-up"/></svg></button>
+        </article>
+
+        <article class="app-card" data-category="Organização">
+          <div class="app-card-top">
+            <div class="app-icon"><svg width="22" height="22" aria-hidden="true"><use href="#i-calendar"/></svg></div>
+            <div class="app-meta"><span class="app-category">Organização</span><span class="app-status"><i></i>Em preparação</span></div>
+          </div>
+          <span class="app-badge-free">Teste Grátis 30 Dias Úteis</span>
+          <div class="preview-shell" aria-label="Conceito visual da Agenda Pro">
+            <div class="preview-heading"><span>Conceito visual</span><span class="preview-indicator"></span></div>
+            <div class="preview-scene calendar">
+              <div class="preview-window">
+                <div class="preview-window-top"><i></i><i></i><i></i></div>
+                <div class="preview-window-body">
+                  <div class="preview-rail"><i></i><i></i><i></i></div>
+                  <div class="preview-canvas">
+                    <i class="preview-line"></i><i class="preview-line short"></i>
+                    <div class="preview-concept"><span class="concept-orbit"></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="app-content">
+            <h3 class="app-name">Agenda Pro</h3>
+            <p class="app-description">Uma prévia de produto para deixar compromissos e rotinas mais bem encaminhados.</p>
+          </div>
+          <button class="app-action" type="button" data-app="agenda-pro">Conhecer a proposta <svg width="17" height="17" aria-hidden="true"><use href="#i-arrow-up"/></svg></button>
+        </article>
+      </div>
+
+      <div class="solutions-footer">
+        <p>30 soluções em preparação.<br>Uma nova forma de trabalhar.</p>
+        <a class="text-link" href="mailto:sac3iatlassistemasweb@yahoo.com?subject=Interesse%20no%20cat%C3%A1logo%20de%20solu%C3%A7%C3%B5es">Falar sobre o catálogo em breve <svg width="17" height="17" aria-hidden="true"><use href="#i-arrow-up"/></svg></a>
+      </div>
+    </section>
+
+    <section class="about-section shell" id="sobre" aria-labelledby="about-title">
+      <div class="about-visual" aria-hidden="true">
+        <div class="orbit large"></div><div class="orbit"></div><div class="orbit small"></div>
+        <span class="orbit-point"></span><span class="orbit-point two"></span>
+        <div class="about-core"><svg viewBox="0 0 96 96"><path d="M48 17 79 70H65L48 40 31 70H17Z" fill="#0284c7"/><path d="M29 73h38" stroke="#0284c7" stroke-width="5" stroke-linecap="round"/><circle cx="72" cy="27" r="6" fill="#0284c7"/></svg></div>
+        <span class="visual-label">IDEIA → TECNOLOGIA → POSSIBILIDADE</span>
+      </div>
+      <div class="about-copy">
+        <span class="eyebrow">02 / NOSSO PROPÓSITO</span>
+        <h2 id="about-title">O futuro faz sentido<br>quando resolve<br><span>o seu presente.</span></h2>
+        <p>Somos a 3iATLASIA. Desenvolvemos aplicativos e sistemas web para solucionar dores reais do mercado e apoiar o crescimento de negócios como o seu.</p>
+        <p>Nossa missão é aproximar tecnologia e pessoas com soluções que tenham identidade, segurança e façam parte da sua realidade.</p>
+        <a class="text-link" href="mailto:sac3iatlassistemasweb@yahoo.com?subject=Vamos%20conversar%20sobre%20meu%20neg%C3%B3cio">Conte o que seu negócio precisa <svg width="17" height="17" aria-hidden="true"><use href="#i-arrow-up"/></svg></a>
+      </div>
+    </section>
+
+    <section class="advantages-section" id="diferenciais" aria-labelledby="advantages-title">
+      <div class="shell advantages-layout">
+        <div class="advantages-intro">
+          <span class="eyebrow">03 / NOSSO JEITO DE CRIAR</span>
+          <h2 id="advantages-title">Futurista por fora.<br><span>Essencial por dentro.</span></h2>
+          <p>O que importa não é apenas a tecnologia. É o que ela torna possível para você.</p>
+          <span class="intro-line" aria-hidden="true"></span>
+        </div>
+        <div class="advantages-list">
+          <article class="advantage">
+            <span class="advantage-number">01</span>
+            <div class="advantage-content">
+              <div class="advantage-heading"><svg width="23" height="23" aria-hidden="true"><use href="#i-fingerprint"/></svg><h3>Sua identidade. Não um molde.</h3></div>
+              <p>Aplicativos e sistemas web com identidade própria, pensados para os desafios e as necessidades do seu negócio.</p>
+            </div>
+          </article>
+          <article class="advantage">
+            <span class="advantage-number">02</span>
+            <div class="advantage-content">
+              <div class="advantage-heading"><svg width="23" height="23" aria-hidden="true"><use href="#i-shield"/></svg><h3>Segurança como princípio.</h3></div>
+              <p>Compromisso com a proteção dos dados e o desenvolvimento de soluções em conformidade com a LGPD.</p>
+            </div>
+          </article>
+          <article class="advantage">
+            <span class="advantage-number">03</span>
+            <div class="advantage-content">
+              <div class="advantage-heading"><svg width="23" height="23" aria-hidden="true"><use href="#i-spark"/></svg><h3>Tecnologia que cabe no plano.</h3></div>
+              <p>Planos acessíveis e período de teste gratuito de 30 dias úteis para aproximar seu negócio das ferramentas de que ele precisa.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Novas Opções de Informações, Empresa, Recursos, Produtos e Redes Sociais Inspiradas no Print (Deixadas em Branco para Futuras Implantações) -->
+    <section class="footer-expansion-section shell" aria-labelledby="expansion-heading">
+      <h2 class="sr-only" id="expansion-heading">Seções adicionais do ecossistema</h2>
+      <div class="expansion-grid">
+        <div class="expansion-col">
+          <h3>Empresa</h3>
+          <ul class="expansion-links">
+            <li><a href="#empresa-sobre">Sobre a 3iATLASIA <span class="blank-placeholder">[ Em branco ]</span></a></li>
+            <li><a href="#empresa-carreiras">Carreiras e Talentos <span class="blank-placeholder">[ Em branco ]</span></a></li>
+            <li><a href="#empresa-parceiros">Parceiros Globais <span class="blank-placeholder">[ Em branco ]</span></a></li>
+            <li><a href="#empresa-imprensa">Sala de Imprensa <span class="blank-placeholder">[ Em branco ]</span></a></li>
+          </ul>
+        </div>
+        <div class="expansion-col">
+          <h3>Recursos</h3>
+          <ul class="expansion-links">
+            <li><a href="#recursos-centro">Central de Recursos <span class="blank-placeholder">[ Em branco ]</span></a></li>
+            <li><a href="#recursos-consultoria">Serviços de Consultoria <span class="blank-placeholder">[ Em branco ]</span></a></li>
+            <li><a href="#recursos-ajuda">Central de Ajuda Técnica <span class="blank-placeholder">[ Em branco ]</span></a></li>
+            <li><a href="#recursos-documentacao">Documentação &amp; APIs <span class="blank-placeholder">[ Em branco ]</span></a></li>
+          </ul>
+        </div>
+        <div class="expansion-col">
+          <h3>Produtos &amp; Soluções</h3>
+          <ul class="expansion-links">
+            <li><a href="#produtos-business">3iBusiness Suite <span class="blank-placeholder">[ Em branco ]</span></a></li>
+            <li><a href="#produtos-remote">Remote Support Tools <span class="blank-placeholder">[ Em branco ]</span></a></li>
+            <li><a href="#produtos-ai">GoInsight AI Engine <span class="blank-placeholder">[ Em branco ]</span></a></li>
+            <li><a href="#produtos-parental">Parental Control App <span class="blank-placeholder">[ Em branco ]</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section shell" aria-labelledby="faq-title">
+      <div class="faq-intro">
+        <span class="eyebrow">SEM COMPLICAÇÃO</span>
+        <h2 id="faq-title">Boas perguntas.<br><span>Respostas claras.</span></h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Como funcionam os 30 dias úteis de teste gratuito? <svg width="18" height="18" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+          <p>Ao baixar ou acessar nossos aplicativos e sistemas, todas as funções avançadas ficam totalmente disponíveis e gratuitas para testes durante 30 dias úteis. Após esse período, os recursos pagos são bloqueados, e o aplicativo passa a operar no modo gratuito com exibição de propagandas e anúncios para sustentar as operações da empresa.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Os aplicativos já estão disponíveis para download? <svg width="18" height="18" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+          <p>Ainda não. Estamos preparando uma linha completa com 30 soluções, incluindo Orça Fácil, Estoque Inteligente e Agenda Pro. O catálogo completo estará disponível em breve. Você pode entrar em contato por e-mail para saber mais.</p>
+        </details>
+        <details class="faq-item">
+          <summary>O painel de demonstração é um aplicativo real? <svg width="18" height="18" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+          <p>Não. O painel é um protótipo interativo adaptado para celulares e dispositivos para apresentar conceitos. Os dados são fictícios, as ações ocorrem somente nesta página e nada é enviado ou salvo em um servidor.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Como posso falar sobre um projeto ou parceria? <svg width="18" height="18" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+          <p>Nosso canal oficial de contato é sac3iatlassistemasweb@yahoo.com. Use os botões desta página para abrir seu aplicativo de e-mail e enviar sua mensagem diretamente.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="contact-section shell" id="contato" aria-labelledby="contact-title">
+      <div class="contact-panel">
+        <div class="contact-topline">
+          <span class="eyebrow"><span class="status-dot"></span> VAMOS CONSTRUIR ALGO SEU</span>
+          <svg class="contact-arrow" width="57" height="57" aria-hidden="true"><use href="#i-arrow-up"/></svg>
+        </div>
+        <h2 id="contact-title">Sua próxima grande ideia<br>começa com <span>uma conversa.</span></h2>
+        <p>Um projeto, uma dúvida ou uma parceria.<br>Queremos ouvir o que você tem em mente.</p>
+        <a class="button button-primary" href="mailto:sac3iatlassistemasweb@yahoo.com?subject=Vamos%20conversar%20sobre%20meu%20projeto%20%7C%203iATLASIA">Fale com a 3iATLASIA <svg width="19" height="19" aria-hidden="true"><use href="#i-arrow-up"/></svg></a>
+        <div class="contact-bottom">
+          <a class="email-link" href="mailto:sac3iatlassistemasweb@yahoo.com"><svg width="19" height="19" aria-hidden="true"><use href="#i-mail"/></svg>sac3iatlassistemasweb@yahoo.com</a>
+          <button class="copy-email" type="button"><svg width="17" height="17" aria-hidden="true"><use href="#i-copy"/></svg><span>Copiar e-mail</span></button>
+        </div>
+        <div class="copy-status" role="status" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer shell">
+    <div class="footer-top">
+      <div>
+        <a class="brand" href="#inicio" aria-label="3iATLASIA — voltar ao início">
+          <svg class="brand-mark" viewBox="0 0 96 96" aria-hidden="true"><rect width="96" height="96" rx="22" fill="#08111e"/><path d="M48 17 79 70H65L48 40 31 70H17Z" fill="#0284c7"/><path d="M29 73h38" stroke="#0284c7" stroke-width="5" stroke-linecap="round"/><circle cx="72" cy="27" r="6" fill="#0284c7"/></svg>
+          <span>3i<span class="brand-ia">ATLASIA</span><span class="brand-dot">.</span></span>
+        </a>
+        <p class="footer-tagline">Tecnologia, inteligência e soluções<br>para ir além.</p>
+        <!-- Redes Sociais em Branco para Futuras Implantações -->
+        <div class="footer-socials" aria-label="Redes sociais">
+          <a href="#linkedin" aria-label="LinkedIn [ Em branco ]">in</a> / 
+          <a href="#x" aria-label="X [ Em branco ]">X</a> / 
+          <a href="#facebook" aria-label="Facebook [ Em branco ]">f</a> / 
+          <a href="#youtube" aria-label="YouTube [ Em branco ]">yt</a>
+          <span class="blank-placeholder" style="margin-left: 8px;">[ Redes em branco ]</span>
+        </div>
+      </div>
+      <nav class="footer-links" aria-label="Links do rodapé">
+        <a href="#solucoes">Soluções</a>
+        <a href="#sobre">Sobre nós</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <div class="footer-security"><svg width="21" height="21" aria-hidden="true"><use href="#i-shield"/></svg><span>Comprometidos com a LGPD<br>e a proteção dos seus dados.</span></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 3iATLASIA. Todos os direitos reservados.</p>
+      <button type="button" class="privacy-open">Privacidade e proteção de dados <svg width="14" height="14" aria-hidden="true"><use href="#i-arrow-up"/></svg></button>
+      <a href="#inicio">Voltar ao topo <svg width="14" height="14" aria-hidden="true"><use href="#i-arrow-up"/></svg></a>
+    </div>
+  </footer>
+
+  <!-- Popup de Notificações / Promoções Automático ao Abrir o Site (Inspirado no Print) -->
+  <dialog class="welcome-dialog" id="welcome-promo-dialog" aria-labelledby="welcome-title" aria-modal="true">
+    <button class="dialog-close" type="button" aria-label="Fechar aviso"><svg width="20" height="20" aria-hidden="true"><use href="#i-close"/></svg></button>
+    <div class="welcome-header">
+      <svg width="28" height="28" aria-hidden="true" style="margin: 0 auto;"><use href="#i-spark"/></svg>
+      <h3 id="welcome-title">Cansado de perder as melhores novidades?</h3>
+    </div>
+    <div class="welcome-body">
+      <p>Ative as notificações e seja o primeiro a saber quando novas soluções e aplicativos caírem em oferta ou liberarem testes gratuitos.</p>
+      <div class="welcome-actions">
+        <button class="welcome-btn-primary" type="button" id="welcome-accept-btn">Ativar alertas grátis</button>
+        <button class="welcome-btn-secondary" type="button" id="welcome-close-btn">Continuar lendo</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Banner LGPD e Aceite de Cookies (Exigido pelas Leis do Brasil e Políticas do Google) -->
+  <aside class="cookie-banner" id="cookie-banner" role="region" aria-label="Aviso de Privacidade e Cookies" hidden>
+    <div class="shell cookie-inner">
+      <div class="cookie-text">
+        <svg width="22" height="22" aria-hidden="true"><use href="#i-shield"/></svg>
+        <div>
+          <h4>Sua privacidade e proteção de dados (LGPD)</h4>
+          <p>Utilizamos cookies e tecnologias semelhantes para aprimorar sua experiência, analisar o tráfego e exibir conteúdos personalizados em conformidade com a <button type="button" class="privacy-open" style="background:none;border:0;color:var(--cyan);padding:0;font:inherit;text-decoration:underline;cursor:pointer;">Lei Geral de Proteção de Dados (LGPD)</button> e políticas do Google. Ao continuar navegando, você concorda com o uso de cookies.</p>
+        </div>
+      </div>
+      <div class="cookie-actions">
+        <button class="demo-quiet-button" type="button" id="cookie-settings-btn">Preferências</button>
+        <button class="demo-button" type="button" id="cookie-accept-btn">Aceitar e Continuar</button>
+      </div>
+    </div>
+  </aside>
+
+  <dialog id="app-dialog" aria-labelledby="app-dialog-title" aria-modal="true">
+    <button class="dialog-close" type="button" aria-label="Fechar janela"><svg width="20" height="20" aria-hidden="true"><use href="#i-close"/></svg></button>
+    <svg class="dialog-icon" width="30" height="30" aria-hidden="true"><use href="#i-spark"/></svg>
+    <h2 class="dialog-title" id="app-dialog-title"></h2>
+    <p class="dialog-subtitle" id="app-dialog-subtitle"></p>
+    <div class="dialog-body">
+      <p>Este aplicativo está em preparação com modelo <strong>Freemium</strong>. Oferece <strong>30 dias úteis de testes gratuitos</strong> com todas as funções liberadas. Após o período, as funções avançadas são bloqueadas e liberadas apenas no modo gratuito financiado por propagandas.</p>
+      <p class="dialog-note">O contato abre seu aplicativo de e-mail. Nenhum cadastro é criado e nenhuma mensagem é enviada automaticamente.</p>
+    </div>
+    <a class="dialog-link" id="app-dialog-contact" href="mailto:sac3iatlassistemasweb@yahoo.com">Conversar sobre a proposta <svg width="17" height="17" aria-hidden="true"><use href="#i-arrow-up"/></svg></a>
+    <button class="dialog-demo-cta" type="button" id="app-dialog-demo">Abrir painel de demonstração <svg width="17" height="17" aria-hidden="true"><use href="#i-arrow-up"/></svg></button>
+  </dialog>
+  
+  <dialog class="demo-dialog" id="demo-dialog" aria-labelledby="demo-dialog-title" aria-modal="true">
+    <div class="demo-shell">
+      <header class="demo-topbar">
+        <div>
+          <span class="eyebrow">3iATLASIA / LABORATÓRIO DE IDEIAS</span>
+          <h2 id="demo-dialog-title">Painel de demonstração</h2>
+        </div>
+        <div class="demo-top-actions">
+          <span class="demo-badge">PROTÓTIPO</span>
+          <span class="demo-badge">TESTE 30 DIAS</span>
+          <button class="dialog-close" type="button" aria-label="Fechar painel de demonstração"><svg width="20" height="20" aria-hidden="true"><use href="#i-close"/></svg></button>
+        </div>
+      </header>
+      <div class="demo-disclaimer" role="note">
+        <svg width="17" height="17" aria-hidden="true"><use href="#i-shield"/></svg>
+        <p><strong>Demonstração interativa e responsiva para dispositivos móveis.</strong> Os dados são fictícios; as alterações ocorrem somente nesta sessão. Após 30 dias úteis de testes, as ferramentas operam com propagandas para fins lucrativos da empresa.</p>
+      </div>
+      <div class="demo-layout">
+        <nav class="demo-sidebar" role="tablist" aria-label="Escolher aplicativo para demonstrar">
+          <p class="demo-sidebar-label">Aplicativos em preparação</p>
+          <button class="demo-tab" id="demo-tab-orca" type="button" role="tab" data-demo-tab="orca" aria-selected="true" aria-controls="demo-panel-orca" tabindex="0"><svg width="20" height="20" aria-hidden="true"><use href="#i-receipt"/></svg><span>Orça Fácil<small>Simulação de orçamento</small></span></button>
+          <button class="demo-tab" id="demo-tab-estoque" type="button" role="tab" data-demo-tab="estoque" aria-selected="false" aria-controls="demo-panel-estoque" tabindex="-1"><svg width="20" height="20" aria-hidden="true"><use href="#i-boxes"/></svg><span>Estoque Inteligente<small>Simulação de estoque</small></span></button>
+          <button class="demo-tab" id="demo-tab-agenda" type="button" role="tab" data-demo-tab="agenda" aria-selected="false" aria-controls="demo-panel-agenda" tabindex="-1"><svg width="20" height="20" aria-hidden="true"><use href="#i-calendar"/></svg><span>Agenda Pro<small>Simulação de agenda</small></span></button>
+          <div class="demo-sidebar-note"><svg width="16" height="16" aria-hidden="true"><use href="#i-shield"/></svg><span>Protótipo otimizado para celulares e telas compactas.</span></div>
+        </nav>
+        
+        <div class="demo-content">
+          <section class="demo-panel" id="demo-panel-orca" role="tabpanel" aria-labelledby="demo-tab-orca" data-demo-panel="orca">
+            <header class="demo-panel-head">
+              <div>
+                <p class="demo-kicker">SIMULAÇÃO / ORÇAMENTO</p>
+                <h3>Orça Fácil</h3>
+                <p>Edite os itens de exemplo para ver a estimativa mudar. Totalmente adaptado para visualização em dispositivos móveis.</p>
+              </div>
+              <button class="demo-quiet-button" type="button" data-demo-reset="orca">Restaurar exemplo</button>
+            </header>
+            <div class="demo-metrics">
+              <div class="demo-metric"><span>Itens no exemplo</span><strong id="budget-item-count">0</strong></div>
+              <div class="demo-metric"><span>Total ilustrativo</span><strong id="budget-total-stat">R$ 0,00</strong></div>
+              <div class="demo-metric"><span>Modo teste</span><strong>30 dias úteis</strong></div>
+            </div>
+            <div class="demo-card">
+              <div class="demo-card-head">
+                <div>
+                  <h4>Orçamento demonstrativo</h4>
+                  <p>Os valores abaixo são exemplos fictícios, sem validade comercial.</p>
+                </div>
+                <label class="demo-field-inline" for="budget-name">Descrição<input id="budget-name" type="text" value="Orçamento de demonstração" maxlength="60"></label>
+              </div>
+              <div class="demo-table-wrap">
+                <table class="demo-table">
+                  <thead>
+                    <tr><th scope="col">Item fictício</th><th scope="col">Qtd.</th><th scope="col">Valor unitário</th><th scope="col">Subtotal</th><th scope="col"><span class="sr-only">Ação</span></th></tr>
+                  </thead>
+                  <tbody id="budget-rows"></tbody>
+                </table>
+              </div>
+              <div class="demo-card-footer">
+                <button class="demo-add-button" type="button" data-demo-action="add-budget-row">+ Adicionar item de exemplo</button>
+                <div class="demo-total"><span>Total da simulação</span><strong id="budget-total">R$ 0,00</strong></div>
+              </div>
+            </div>
+            <div class="demo-actions">
+              <button class="demo-button" type="button" data-demo-action="calculate-budget">Calcular demonstração</button>
+              <button class="demo-quiet-button" type="button" data-demo-reset="orca">Limpar e restaurar</button>
+            </div>
+            <p class="demo-live" id="budget-status" role="status" aria-live="polite"></p>
+          </section>
+
+          <section class="demo-panel" id="demo-panel-estoque" role="tabpanel" aria-labelledby="demo-tab-estoque" data-demo-panel="estoque" hidden>
+            <header class="demo-panel-head">
+              <div>
+                <p class="demo-kicker">SIMULAÇÃO / INVENTÁRIO</p>
+                <h3>Estoque Inteligente</h3>
+                <p>Ajuste as quantidades e filtre itens fictícios abaixo do limite demonstrativo em telas móveis.</p>
+              </div>
+              <button class="demo-quiet-button" type="button" data-demo-reset="estoque">Restaurar exemplo</button>
+            </header>
+            <div class="demo-metrics">
+              <div class="demo-metric"><span>Itens fictícios</span><strong id="stock-item-count">0</strong></div>
+              <div class="demo-metric"><span>Abaixo do limite</span><strong id="stock-low-count">0</strong></div>
+              <div class="demo-metric"><span>Monetização</span><strong>Anúncios após teste</strong></div>
+            </div>
+            <div class="demo-card">
+              <div class="demo-card-head">
+                <div>
+                  <h4>Lista de demonstração</h4>
+                  <p>Use + e − para simular movimentações de inventário.</p>
+                </div>
+              </div>
+              <div class="demo-toolbar">
+                <div class="demo-filters" role="group" aria-label="Filtrar itens fictícios">
+                  <button class="demo-chip" type="button" data-stock-filter="all" aria-pressed="true">Todos</button>
+                  <button class="demo-chip" type="button" data-stock-filter="low" aria-pressed="false">Abaixo do limite</button>
+                </div>
+              </div>
+              <div class="demo-stock-list" id="demo-stock-list" aria-live="polite"></div>
+            </div>
+            <p class="demo-live" id="stock-status" role="status" aria-live="polite"></p>
+          </section>
+
+          <section class="demo-panel" id="demo-panel-agenda" role="tabpanel" aria-labelledby="demo-tab-agenda" data-demo-panel="agenda" hidden>
+            <header class="demo-panel-head">
+              <div>
+                <p class="demo-kicker">SIMULAÇÃO / ORGANIZAÇÃO</p>
+                <h3>Agenda Pro</h3>
+                <p>Adicione compromissos fictícios e teste a organização em visualizações responsivas.</p>
+              </div>
+              <button class="demo-quiet-button" type="button" data-demo-reset="agenda">Restaurar exemplo</button>
+            </header>
+            <div class="demo-metrics">
+              <div class="demo-metric"><span>Compromissos de exemplo</span><strong id="agenda-item-count">0</strong></div>
+              <div class="demo-metric"><span>Pendentes</span><strong id="agenda-pending-count">0</strong></div>
+              <div class="demo-metric"><span>Período teste</span><strong>30 dias úteis</strong></div>
+            </div>
+            <div class="demo-card">
+              <div class="demo-card-head">
+                <div>
+                  <h4>Compromissos fictícios</h4>
+                  <p>Concluir, reabrir e adicionar alteram apenas a demonstração nesta sessão.</p>
+                </div>
+              </div>
+              <div class="demo-agenda-list" id="demo-agenda-list" aria-live="polite"></div>
+              <form class="demo-agenda-form" id="demo-agenda-form">
+                <label class="demo-field" for="agenda-title">Novo compromisso de exemplo<input id="agenda-title" name="title" type="text" maxlength="55" placeholder="Ex.: conversa demonstrativa" required></label>
+                <label class="demo-field" for="agenda-date">Data fictícia<input id="agenda-date" name="date" type="date" required></label>
+                <label class="demo-field" for="agenda-time">Horário<input id="agenda-time" name="time" type="time" value="10:00" required></label>
+                <button class="demo-button" type="submit">Adicionar localmente</button>
+              </form>
+            </div>
+            <p class="demo-live" id="agenda-status" role="status" aria-live="polite"></p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </dialog>
+  
+  <dialog id="privacy-dialog" aria-labelledby="privacy-title" aria-modal="true">
+    <button class="dialog-close" type="button" aria-label="Fechar informações de privacidade"><svg width="20" height="20" aria-hidden="true"><use href="#i-close"/></svg></button>
+    <svg class="dialog-icon" width="30" height="30" aria-hidden="true"><use href="#i-shield"/></svg>
+    <h2 class="dialog-title" id="privacy-title">Privacidade faz parte do projeto.</h2>
+    <p class="dialog-subtitle">Nosso compromisso é desenvolver soluções em conformidade com a LGPD e com respeito à proteção dos seus dados.</p>
+    <div class="dialog-body">
+      <p>Os botões de contato abrem o seu aplicativo de e-mail. Nenhuma mensagem é enviada automaticamente por esta página. As informações enviadas no atendimento também estão sujeitas às condições do seu provedor de e-mail.</p>
+      <p>Para dúvidas sobre privacidade, proteção de dados ou solicitações relacionadas ao atendimento, fale com a 3iATLASIA pelo endereço abaixo.</p>
+    </div>
+    <a class="dialog-link" href="mailto:sac3iatlassistemasweb@yahoo.com?subject=Privacidade%20e%20prote%C3%A7%C3%A3o%20de%20dados">sac3iatlassistemasweb@yahoo.com <svg width="17" height="17" aria-hidden="true"><use href="#i-arrow-up"/></svg></a>
+  </dialog>
+
+  <script>
+    (() => {
+      const email = "sac3iatlassistemasweb@yahoo.com";
+      const menuButton = document.querySelector(".menu-toggle");
+      const mobileNav = document.getElementById("mobile-navigation");
+      
+      // Abrir automaticamente o popup de boas-vindas / notificações assim que o site for aberto
+      window.addEventListener("load", () => {
+        const welcomeDialog = document.getElementById("welcome-promo-dialog");
+        if (welcomeDialog && !welcomeDialog.open) {
+          try {
+            welcomeDialog.showModal();
+          } catch (e) {
+            // Fallback caso o navegador bloqueie por restrições
+          }
+        }
+
+        // LGPD & Google Compliant Cookie Consent Handler ao abrir o site
+        const cookieBanner = document.getElementById("cookie-banner");
+        if (cookieBanner && !localStorage.getItem("3iatlasia_cookie_consent")) {
+          window.setTimeout(() => {
+            cookieBanner.hidden = false;
+          }, 800);
+        }
+      });
+
+      const welcomeAccept = document.getElementById("welcome-accept-btn");
+      const welcomeClose = document.getElementById("welcome-close-btn");
+      const welcomeDialog = document.getElementById("welcome-promo-dialog");
+      if (welcomeAccept) {
+        welcomeAccept.addEventListener("click", () => {
+          if (welcomeDialog) welcomeDialog.close();
+        });
+      }
+      if (welcomeClose) {
+        welcomeClose.addEventListener("click", () => {
+          if (welcomeDialog) welcomeDialog.close();
+        });
+      }
+
+      // Configurações de Aceite de Cookies LGPD
+      const cookieBanner = document.getElementById("cookie-banner");
+      const cookieAcceptBtn = document.getElementById("cookie-accept-btn");
+      const cookieSettingsBtn = document.getElementById("cookie-settings-btn");
+      const privacyDialog = document.getElementById("privacy-dialog");
+
+      if (cookieAcceptBtn && cookieBanner) {
+        cookieAcceptBtn.addEventListener("click", () => {
+          localStorage.setItem("3iatlasia_cookie_consent", "accepted");
+          cookieBanner.hidden = true;
+        });
+      }
+      if (cookieSettingsBtn && privacyDialog) {
+        cookieSettingsBtn.addEventListener("click", () => {
+          privacyDialog.showModal();
+        });
+      }
+
+      menuButton.addEventListener("click", () => {
+        const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+        menuButton.setAttribute("aria-expanded", String(!isOpen));
+        menuButton.setAttribute("aria-label", isOpen ? "Abrir menu" : "Fechar menu");
+        menuButton.querySelector("use").setAttribute("href", isOpen ? "#i-menu" : "#i-close");
+        mobileNav.hidden = isOpen;
+      });
+      
+      mobileNav.querySelectorAll("a[href^='#']").forEach(link => link.addEventListener("click", () => {
+        mobileNav.hidden = true;
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.setAttribute("aria-label", "Abrir menu");
+        menuButton.querySelector("use").setAttribute("href", "#i-menu");
+      }));
+      
+      document.addEventListener("keydown", event => {
+        if (event.key === "Escape") {
+          mobileNav.hidden = true;
+          menuButton.setAttribute("aria-expanded", "false");
+          menuButton.setAttribute("aria-label", "Abrir menu");
+          menuButton.querySelector("use").setAttribute("href", "#i-menu");
+        }
+      });
+
+      // Seletor de Idiomas Dropdown Toggle
+      const langBtn = document.querySelector(".lang-btn");
+      const langDropdown = document.querySelector(".lang-dropdown");
+      if (langBtn && langDropdown) {
+        langBtn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          const expanded = langBtn.getAttribute("aria-expanded") === "true";
+          langBtn.setAttribute("aria-expanded", String(!expanded));
+          langDropdown.hidden = expanded;
+        });
+        document.addEventListener("click", () => {
+          langBtn.setAttribute("aria-expanded", "false");
+          langDropdown.hidden = true;
+        });
+      }
+
+      const sections = [...document.querySelectorAll("#solucoes,#sobre,#diferenciais,#contato")];
+      const navLinks = [...document.querySelectorAll(".desktop-nav a")];
+      if ("IntersectionObserver" in window) {
+        const observer = new IntersectionObserver(entries => {
+          const visible = entries.filter(entry => entry.isIntersecting).sort((a,b) => b.intersectionRatio-a.intersectionRatio)[0];
+          if (!visible) return;
+          navLinks.forEach(link => {
+            const active = link.hash === `#${visible.target.id}`;
+            link.classList.toggle("is-active", active);
+            if (active) link.setAttribute("aria-current", "location");
+            else link.removeAttribute("aria-current");
+          });
+        }, {rootMargin:"-15% 0px -60% 0px",threshold:[0,.1,.25,.5]});
+        sections.forEach(section => observer.observe(section));
+      }
+
+      const filterButtons = [...document.querySelectorAll(".filter-button")];
+      const cards = [...document.querySelectorAll(".app-card")];
+      filterButtons.forEach(button => button.addEventListener("click", () => {
+        const filter = button.dataset.filter;
+        filterButtons.forEach(item => item.setAttribute("aria-pressed", String(item === button)));
+        cards.forEach(card => { card.hidden = filter !== "Todas" && card.dataset.category !== filter; });
+      }));
+
+      const appDetails = {
+        "orca-facil": {name:"Orça Fácil", detail:"O Orça Fácil está em preparação com 30 dias úteis de teste gratuito. Após o período, funções pagas exigirão adesão ou opera no modo gratuito com propagandas."},
+        "estoque-inteligente": {name:"Estoque Inteligente", detail:"O Estoque Inteligente está em preparação com modelo freemium. Desfrute de 30 dias úteis de testes completos antes da ativação do modo com anúncios."},
+        "agenda-pro": {name:"Agenda Pro", detail:"A Agenda Pro está em preparação. Disponível por 30 dias úteis com todas as funções desbloqueadas para avaliação em dispositivos móveis."}
+      };
+      
+      const demoTargetByApp = {"orca-facil":"orca","estoque-inteligente":"estoque","agenda-pro":"agenda"};
+      const appDialog = document.getElementById("app-dialog");
+      
+      document.querySelectorAll("[data-app]").forEach(button => button.addEventListener("click", () => {
+        const app = appDetails[button.dataset.app];
+        if (!app) return;
+        document.getElementById("app-dialog-title").textContent = app.name;
+        document.getElementById("app-dialog-subtitle").textContent = app.detail;
+        document.getElementById("app-dialog-contact").href = `mailto:${email}?subject=${encodeURIComponent(`Interesse em ${app.name}`)}`;
+        document.getElementById("app-dialog-demo").dataset.demoTarget = demoTargetByApp[button.dataset.app] || "orca";
+        appDialog.showModal();
+      }));
+
+      const demoDialog = document.getElementById("demo-dialog");
+      const demoTabs = [...document.querySelectorAll("[data-demo-tab]")];
+      const demoPanels = [...document.querySelectorAll("[data-demo-panel]")];
+      const demoNames = {orca:"Orça Fácil",estoque:"Estoque Inteligente",agenda:"Agenda Pro"};
+      
+      function selectDemoTab(name) {
+        demoTabs.forEach(tab => {
+          const active = tab.dataset.demoTab === name;
+          tab.setAttribute("aria-selected", String(active));
+          tab.tabIndex = active ? 0 : -1;
+        });
+        demoPanels.forEach(panel => { panel.hidden = panel.dataset.demoPanel !== name; });
+        const activeTab = demoTabs.find(tab => tab.dataset.demoTab === name) || demoTabs[0];
+        if (activeTab) document.getElementById("demo-dialog-title").dataset.activeApp = demoNames[name] || demoNames.orca;
+      }
+
+      demoTabs.forEach((tab,index) => {
+        tab.addEventListener("click", () => selectDemoTab(tab.dataset.demoTab));
+        tab.addEventListener("keydown", event => {
+          if (!["ArrowLeft","ArrowRight","Home","End"].includes(event.key)) return;
+          event.preventDefault();
+          const next = event.key === "Home" ? 0 : event.key === "End" ? demoTabs.length - 1 : (index + (event.key === "ArrowRight" ? 1 : demoTabs.length - 1)) % demoTabs.length;
+          demoTabs[next].focus();
+          demoTabs[next].click();
+        });
+      });
+
+      document.getElementById("app-dialog-demo").addEventListener("click", event => {
+        const target = event.currentTarget.dataset.demoTarget || "orca";
+        appDialog.close();
+        window.setTimeout(() => { selectDemoTab(target); demoDialog.showModal(); }, 0);
+      });
+
+      let demoNoticeTimer;
+      function announceDemo(id,message) {
+        const node = document.getElementById(id);
+        if (!node) return;
+        node.textContent = message;
+        window.clearTimeout(demoNoticeTimer);
+        demoNoticeTimer = window.setTimeout(() => { node.textContent = ""; }, 4200);
+      }
+
+      const money = new Intl.NumberFormat("pt-BR",{style:"currency",currency:"BRL"});
+      const budgetRows = document.getElementById("budget-rows");
+      
+      function addBudgetRow(name="Item fictício",quantity=1,unitPrice=0) {
+        const row = document.createElement("tr");
+        const nameCell = document.createElement("td");
+        const nameInput = document.createElement("input");
+        nameInput.type = "text"; nameInput.maxLength = 55; nameInput.value = name; nameInput.setAttribute("aria-label","Nome do item fictício"); nameInput.dataset.budgetName = "true";
+        nameCell.append(nameInput);
+        const qtyCell = document.createElement("td");
+        const qtyInput = document.createElement("input");
+        qtyInput.type = "number"; qtyInput.min = "0"; qtyInput.step = "1"; qtyInput.value = String(quantity); qtyInput.setAttribute("aria-label","Quantidade de exemplo"); qtyInput.dataset.budgetQty = "true";
+        qtyCell.append(qtyInput);
+        const priceCell = document.createElement("td");
+        const priceInput = document.createElement("input");
+        priceInput.type = "number"; priceInput.min = "0"; priceInput.step = "0.01"; priceInput.value = String(unitPrice); priceInput.setAttribute("aria-label","Valor unitário fictício em reais"); priceInput.dataset.budgetPrice = "true";
+        priceCell.append(priceInput);
+        const subtotal = document.createElement("td"); subtotal.className = "budget-subtotal"; subtotal.textContent = money.format(0);
+        const actionCell = document.createElement("td");
+        const remove = document.createElement("button"); remove.type = "button"; remove.className = "demo-delete-row"; remove.textContent = "×"; remove.setAttribute("aria-label","Remover item fictício"); remove.dataset.budgetRemove = "true";
+        actionCell.append(remove); row.append(nameCell,qtyCell,priceCell,subtotal,actionCell); budgetRows.append(row);
+      }
+
+      function resetBudget() {
+        budgetRows.replaceChildren();
+        document.getElementById("budget-name").value = "Orçamento de demonstração";
+        addBudgetRow("Serviço demonstrativo",2,180);
+        addBudgetRow("Configuração de exemplo",1,250);
+        updateBudget();
+        announceDemo("budget-status","Exemplo fictício restaurado. Nada foi salvo.");
+      }
+
+      function updateBudget() {
+        let total = 0;
+        [...budgetRows.rows].forEach(row => {
+          const qty = Math.max(0,Number(row.querySelector("[data-budget-qty]").value) || 0);
+          const price = Math.max(0,Number(row.querySelector("[data-budget-price]").value) || 0);
+          const subtotal = qty * price;
+          total += subtotal;
+          row.querySelector(".budget-subtotal").textContent = money.format(subtotal);
+        });
+        document.getElementById("budget-item-count").textContent = String(budgetRows.rows.length);
+        document.getElementById("budget-total").textContent = money.format(total);
+        document.getElementById("budget-total-stat").textContent = money.format(total);
+      }
+
+      budgetRows.addEventListener("input",updateBudget);
+      budgetRows.addEventListener("click",event => {
+        const remove = event.target.closest("[data-budget-remove]");
+        if (remove) { remove.closest("tr").remove(); updateBudget(); }
+      });
+
+      document.querySelector('[data-demo-action="add-budget-row"]').addEventListener("click",() => {
+        addBudgetRow("Novo item de exemplo",1,0); updateBudget(); budgetRows.lastElementChild.querySelector("[data-budgetName]").focus();
+      });
+      document.querySelector('[data-demo-action="calculate-budget"]').addEventListener("click",() => {
+        updateBudget(); announceDemo("budget-status","Estimativa calculada nesta página. Nenhum orçamento foi salvo ou enviado.");
+      });
+
+      const inventorySeed = [
+        {id:"demo-a",name:"Produto demonstrativo A",quantity:12,minimum:4},
+        {id:"demo-b",name:"Produto demonstrativo B",quantity:3,minimum:5},
+        {id:"demo-c",name:"Produto demonstrativo C",quantity:8,minimum:3},
+        {id:"demo-d",name:"Produto demonstrativo D",quantity:1,minimum:4}
+      ];
+      let inventory = inventorySeed.map(item => ({...item}));
+      let stockFilter = "all";
+      const inventoryList = document.getElementById("demo-stock-list");
+      
+      function renderInventory() {
+        const lowCount = inventory.filter(item => item.quantity <= item.minimum).length;
+        document.getElementById("stock-item-count").textContent = String(inventory.length);
+        document.getElementById("stock-low-count").textContent = String(lowCount);
+        inventoryList.replaceChildren();
+        const visible = inventory.filter(item => stockFilter === "all" || item.quantity <= item.minimum);
+        if (!visible.length) { const empty = document.createElement("p"); empty.className = "demo-agenda-empty"; empty.textContent = "Nenhum item fictício nesta visualização."; inventoryList.append(empty); return; }
+        visible.forEach(item => {
+          const row = document.createElement("div"); row.className = "demo-stock-row";
+          const info = document.createElement("div"); info.className = "demo-stock-info";
+          const name = document.createElement("strong"); name.textContent = item.name;
+          const threshold = document.createElement("span"); threshold.textContent = `Limite ilustrativo: ${item.minimum} unidades`;
+          info.append(name,threshold);
+          const state = document.createElement("span"); state.className = `demo-stock-state${item.quantity <= item.minimum ? " is-low" : ""}`; state.textContent = item.quantity <= item.minimum ? "Abaixo do limite" : "Exemplo normal";
+          const controls = document.createElement("div"); controls.className = "demo-stock-controls";
+          const minus = document.createElement("button"); minus.type = "button"; minus.textContent = "−"; minus.setAttribute("aria-label",`Diminuir quantidade de ${item.name}`); minus.dataset.stockId = item.id; minus.dataset.stockDelta = "-1";
+          const quantity = document.createElement("strong"); quantity.textContent = String(item.quantity); quantity.setAttribute("aria-label",`${item.quantity} unidades fictícias`);
+          const plus = document.createElement("button"); plus.type = "button"; plus.textContent = "+"; plus.setAttribute("aria-label",`Aumentar quantidade de ${item.name}`); plus.dataset.stockId = item.id; plus.dataset.stockDelta = "1";
+          controls.append(minus,quantity,plus); row.append(info,state,controls); inventoryList.append(row);
+        });
+      }
+
+      inventoryList.addEventListener("click",event => {
+        const control = event.target.closest("[data-stock-id]");
+        if (!control) return;
+        const item = inventory.find(entry => entry.id === control.dataset.stockId);
+        if (!item) return;
+        item.quantity = Math.max(0,item.quantity + Number(control.dataset.stockDelta));
+        renderInventory();
+        announceDemo("stock-status",`${item.name}: ${item.quantity} unidades fictícias nesta sessão.`);
+      });
+
+      document.querySelectorAll("[data-stock-filter]").forEach(button => button.addEventListener("click",() => {
+        stockFilter = button.dataset.stockFilter;
+        document.querySelectorAll("[data-stock-filter]").forEach(filter => filter.setAttribute("aria-pressed",String(filter === button)));
+        renderInventory();
+      }));
+
+      const agendaSeed = [
+        {id:1,dateLabel:"Hoje",time:"09:00",title:"Planejamento demonstrativo",done:false},
+        {id:2,dateLabel:"Amanhã",time:"14:30",title:"Revisão de compromissos",done:false}
+      ];
+      let agenda = agendaSeed.map(item => ({...item}));
+      let nextAgendaId = 3;
+      const agendaList = document.getElementById("demo-agenda-list");
+      
+      function renderAgenda() {
+        document.getElementById("agenda-item-count").textContent = String(agenda.length);
+        document.getElementById("agenda-pending-count").textContent = String(agenda.filter(item => !item.done).length);
+        agendaList.replaceChildren();
+        if (!agenda.length) { const empty = document.createElement("p"); empty.className = "demo-agenda-empty"; empty.textContent = "Nenhum compromisso fictício. Adicione um exemplo abaixo."; agendaList.append(empty); return; }
+        agenda.forEach(item => {
+          const row = document.createElement("article"); row.className = `demo-agenda-item${item.done ? " is-done" : ""}`;
+          const time = document.createElement("div"); time.className = "demo-agenda-time";
+          const date = document.createElement("span"); date.textContent = item.dateLabel;
+          const hour = document.createElement("strong"); hour.textContent = item.time; time.append(date,hour);
+          const title = document.createElement("span"); title.className = "demo-agenda-title"; title.textContent = item.title;
+          const toggle = document.createElement("button"); toggle.type = "button"; toggle.textContent = item.done ? "Reabrir exemplo" : "Concluir exemplo"; toggle.dataset.agendaId = String(item.id);
+          row.append(time,title,toggle); agendaList.append(row);
+        });
+      }
+
+      agendaList.addEventListener("click",event => {
+        const button = event.target.closest("[data-agenda-id]");
+        if (!button) return;
+        const item = agenda.find(entry => entry.id === Number(button.dataset.agendaId));
+        if (!item) return;
+        item.done = !item.done; renderAgenda();
+        announceDemo("agenda-status",`${item.title}: estado atualizado somente nesta demonstração.`);
+      });
+
+      const agendaForm = document.getElementById("demo-agenda-form");
+      const agendaDate = document.getElementById("agenda-date");
+      function localDateValue() {
+        const now = new Date();
+        return new Date(now.getTime() - now.getTimezoneOffset() * 60000).toISOString().slice(0,10);
+      }
+      agendaDate.value = localDateValue();
+
+      agendaForm.addEventListener("submit",event => {
+        event.preventDefault();
+        const data = new FormData(agendaForm);
+        const rawDate = String(data.get("date") || "");
+        const parsedDate = new Date(`${rawDate}T12:00:00`);
+        const dateLabel = Number.isNaN(parsedDate.getTime()) ? rawDate : parsedDate.toLocaleDateString("pt-BR",{day:"2-digit",month:"short"});
+        agenda.push({id:nextAgendaId++,dateLabel,time:String(data.get("time") || "10:00"),title:String(data.get("title") || "Compromisso de exemplo").trim(),done:false});
+        renderAgenda(); agendaForm.reset(); agendaDate.value = localDateValue();
+        announceDemo("agenda-status","Compromisso adicionado apenas nesta demonstração. Nada foi salvo ou sincronizado.");
+      });
+
+      document.querySelectorAll("[data-demo-reset]").forEach(button => button.addEventListener("click",() => {
+        if (button.dataset.demoReset === "orca") resetBudget();
+        if (button.dataset.demoReset === "estoque") { inventory = inventorySeed.map(item => ({...item})); stockFilter = "all"; document.querySelectorAll("[data-stock-filter]").forEach(filter => filter.setAttribute("aria-pressed",String(filter.dataset.stockFilter === "all"))); renderInventory(); announceDemo("stock-status","Exemplo fictício restaurado. Nada foi salvo."); }
+        if (button.dataset.demoReset === "agenda") { agenda = agendaSeed.map(item => ({...item})); nextAgendaId = 3; renderAgenda(); agendaForm.reset(); agendaDate.value = localDateValue(); announceDemo("agenda-status","Exemplos fictícios restaurados. Nada foi salvo."); }
+      }));
+
+      resetBudget(); renderInventory(); renderAgenda();
+
+      document.querySelectorAll("dialog").forEach(dialog => {
+        const closeBtn = dialog.querySelector(".dialog-close");
+        if (closeBtn) {
+          closeBtn.addEventListener("click", () => dialog.close());
+        }
+        dialog.addEventListener("click", event => { if (event.target === dialog) dialog.close(); });
+      });
+
+      document.querySelectorAll(".privacy-open").forEach(btn => {
+        btn.addEventListener("click", (e) => {
+          e.preventDefault();
+          privacyDialog.showModal();
+        });
+      });
+
+      const copyButton = document.querySelector(".copy-email");
+      const copyLabel = copyButton.querySelector("span");
+      const copyStatus = document.querySelector(".copy-status");
+      
+      copyButton.addEventListener("click", async () => {
+        try {
+          await navigator.clipboard.writeText(email);
+          copyLabel.textContent = "Copiado";
+          copyButton.querySelector("use").setAttribute("href", "#i-check");
+          copyStatus.textContent = "Endereço de e-mail copiado.";
+        } catch {
+          copyStatus.textContent = "Não foi possível copiar automaticamente. Selecione o endereço acima.";
+        }
+        window.setTimeout(() => {
+          copyLabel.textContent = "Copiar e-mail";
+          copyButton.querySelector("use").setAttribute("href", "#i-copy");
+          copyStatus.textContent = "";
+        }, 3000);
+      });
+    })();
+  </script>
+</body>
+</html>
